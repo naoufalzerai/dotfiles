@@ -1,0 +1,9 @@
+Telemetry level is off
+Experiments are disabled, only manually opted experiments are active.
+LSP Notebooks experiment is disabled -- not using Pylance
+LSP Notebooks interactive window support is disabled -- not in LSP Notebooks experiment
+> conda info --json
+Python interpreter path: /bin/python3
+> /bin/python3 ~/.vscode-oss/extensions/ms-python.python-2022.12.0/pythonFiles/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2022.12.0/pythonFiles/interpreterInfo.py
+> /usr/bin/python3 ~/.vscode-oss/extensions/ms-python.python-2022.12.0/pythonFiles/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2022.12.0/pythonFiles/interpreterInfo.py
+Starting Jedi language server for youtube-stream-downloader.

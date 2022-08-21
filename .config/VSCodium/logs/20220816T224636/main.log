@@ -1,0 +1,11 @@
+[2022-08-16 22:46:36.529] [main] [info] update#setState idle
+[2022-08-16 22:46:37.637] [main] [info] Starting extension host with pid 569220 (fork() took 10 ms).
+[2022-08-16 22:47:06.543] [main] [info] update#setState checking for updates
+[2022-08-16 22:47:06.869] [main] [info] update#setState idle
+[2022-08-17 12:39:10.524] [main] [info] update#setState checking for updates
+[2022-08-17 12:39:10.790] [main] [info] update#setState available for download
+[2022-08-17 16:52:28.593] [main] [info] Starting extension host with pid 1121462 (fork() took 8 ms).
+[2022-08-17 16:52:30.366] [main] [info] Extension host with pid 569220 exited with code: 0, signal: null.
+[2022-08-17 16:52:31.911] [main] [info] Extension host with pid 1121462 exited with code: 0, signal: null.
+[2022-08-17 16:52:32.352] [main] [info] Starting extension host with pid 1121707 (fork() took 7 ms).
+[2022-08-17 21:12:42.687] [main] [info] Starting extension host with pid 1398032 (fork() took 10 ms).

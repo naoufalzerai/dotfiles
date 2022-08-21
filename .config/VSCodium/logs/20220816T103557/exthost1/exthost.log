@@ -1,0 +1,16 @@
+[2022-08-16 10:35:59.249] [exthost] [info] Extension host with pid 4002 started
+[2022-08-16 10:35:59.249] [exthost] [info] Skipping acquiring lock for /home/near/.config/VSCodium/User/workspaceStorage/f3d54e9a394fa28e06a59c8596192273.
+[2022-08-16 10:35:59.287] [exthost] [info] ExtensionService#_doActivateExtension Koihik.vscode-lua-format, startup: false, activationEvent: 'onLanguage:lua'
+[2022-08-16 10:35:59.290] [exthost] [info] ExtensionService#_doActivateExtension sumneko.lua, startup: false, activationEvent: 'onLanguage:lua'
+[2022-08-16 10:35:59.387] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-08-16 10:35:59.388] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+[2022-08-16 10:35:59.390] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-08-16 10:35:59.393] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.sublime-keybindings, startup: true, activationEvent: '*'
+[2022-08-16 10:35:59.407] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-08-16 10:35:59.420] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-08-16 10:35:59.441] [exthost] [info] Eager extensions activated
+[2022-08-16 10:35:59.458] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-08-16 10:35:59.463] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-08-16 10:35:59.465] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+[2022-08-16 22:46:29.288] [exthost] [info] Extension host terminating: received terminate message from renderer
+[2022-08-16 22:46:29.292] [exthost] [info] Extension host with pid 4002 exiting with code 0

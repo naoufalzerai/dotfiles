@@ -1,0 +1,147 @@
+// vim:ts=4:sw=4:et
+{
+    // tabbed split container with 2 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "tabbed",
+    "marks": [],
+    "percent": 0.670980917308336,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1034,
+               "width": 1289,
+               "x": 11,
+               "y": 35
+            },
+            "marks": [],
+            "name": "TestGtK – header.py",
+            "percent": 0.5,
+            "swallows": [
+               {
+               // "class": "^jetbrains\\-pycharm\\-ce$",
+               // "instance": "^jetbrains\\-pycharm\\-ce$",
+               // "title": "^TestGtK\\ \\–\\ header\\.py$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "none",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1036,
+               "width": 1406,
+               "x": 10,
+               "y": 34
+            },
+            "marks": [],
+            "name": "User Interface Designer",
+            "percent": 0.5,
+            "swallows": [
+               {
+               // "class": "^Glade$",
+               // "instance": "^glade$",
+               // "title": "^User\\ Interface\\ Designer$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    // tabbed split container with 2 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "tabbed",
+    "marks": [],
+    "percent": 0.329019082691664,
+    "type": "con",
+    "nodes": [
+        {
+            // splitv split container with 2 children
+            "border": "pixel",
+            "floating": "auto_off",
+            "layout": "splitv",
+            "marks": [],
+            "percent": 0.5,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "pixel",
+                    "current_border_width": 1,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 877,
+                       "width": 606,
+                       "x": 1309,
+                       "y": 55
+                    },
+                    "marks": [],
+                    "name": "New Tab - Google Chrome",
+                    "percent": 0.8,
+                    "swallows": [
+                       {
+                       // "class": "^Google\\-chrome$",
+                       // "instance": "^google\\-chrome$",
+                       // "title": "^New\\ Tab\\ \\-\\ Google\\ Chrome$",
+                       // "window_role": "^browser$"
+                       }
+                    ],
+                    "type": "con"
+                },
+                {
+                    "border": "pixel",
+                    "current_border_width": 1,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 600,
+                       "width": 800,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "marks": [],
+                    "name": "bash :: ~",
+                    "percent": 0.2,
+                    "swallows": [
+                       {
+                       // "class": "^Alacritty$",
+                       // "instance": "^Alacritty$",
+                       // "title": "^bash\\ \\:\\:\\ \\~$"
+                       }
+                    ],
+                    "type": "con"
+                }
+            ]
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1021,
+               "width": 606,
+               "x": 0,
+               "y": 0
+            },
+            "marks": [],
+            "name": "RESP.app - GUI for Redis® 2022+603cb07",
+            "percent": 0.5,
+            "swallows": [
+               {
+               // "class": "^RESP\\.app\\ \\-\\ Developer\\ GUI\\ for\\ Redis$",
+               // "instance": "^resp$",
+               // "title": "^RESP\\.app\\ \\-\\ GUI\\ for\\ Redis\\®\\ 2022\\+603cb07$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+

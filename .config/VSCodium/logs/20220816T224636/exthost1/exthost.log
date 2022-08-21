@@ -1,0 +1,19 @@
+[2022-08-16 22:46:38.331] [exthost] [info] Extension host with pid 569220 started
+[2022-08-16 22:46:38.331] [exthost] [info] Skipping acquiring lock for /home/near/.config/VSCodium/User/workspaceStorage/e58519af411028565401dfb6037c7e8b.
+[2022-08-16 22:46:38.402] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-08-16 22:46:38.406] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+[2022-08-16 22:46:38.409] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-08-16 22:46:38.418] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.sublime-keybindings, startup: true, activationEvent: '*'
+[2022-08-16 22:46:38.430] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-08-16 22:46:38.497] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-08-16 22:46:38.546] [exthost] [info] Eager extensions activated
+[2022-08-16 22:46:38.580] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-08-16 22:46:38.592] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-08-16 22:46:38.596] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+[2022-08-16 22:56:30.239] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+[2022-08-16 22:56:30.250] [exthost] [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+[2022-08-16 22:56:30.505] [exthost] [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+[2022-08-16 23:06:57.085] [exthost] [info] ExtensionService#_doActivateExtension bierner.emojisense, startup: false, activationEvent: 'onStartupFinished'
+[2022-08-16 23:08:36.049] [exthost] [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+[2022-08-17 16:52:30.353] [exthost] [info] Extension host terminating: received terminate message from renderer
+[2022-08-17 16:52:30.360] [exthost] [info] Extension host with pid 569220 exiting with code 0

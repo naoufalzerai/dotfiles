@@ -1,0 +1,137 @@
+{
+	"last_version": 2074,
+	"new_window_session":
+	{
+		"window_height": 824.0,
+		"window_width": 1169.0
+	},
+	"next_update_check": 1661181734,
+	"project_dir": "/home/near",
+	"recent":
+	[
+		{
+			"locations_tab_selected": false,
+			"path": "/home/near/Documents/Code/zerai.xyz",
+			"previous_commit_messages":
+			[
+				"layout ok",
+				"color change",
+				"font add",
+				"fix the fucking font's path",
+				"static"
+			],
+			"search":
+			{
+				"history":
+				[
+				]
+			},
+			"show_untracked_files": true,
+			"side_bar_visible": true,
+			"table_of_contents_tab_selected": false,
+			"table_of_contents_tree_mode": false
+		},
+		{
+			"locations_tab_selected": false,
+			"path": "/home/near/Documents/Code/github/sublime_debugger",
+			"previous_commit_messages":
+			[
+				"Add Lua debugging adapter.",
+				"remove workspace"
+			],
+			"search":
+			{
+				"history":
+				[
+				]
+			},
+			"show_untracked_files": true,
+			"side_bar_visible": true,
+			"table_of_contents_tab_selected": true,
+			"table_of_contents_tree_mode": false
+		},
+		{
+			"commit_message": "add gitignore",
+			"excluded_refs":
+			{
+				"refs/heads/": true,
+				"refs/heads/master": false,
+				"refs/remotes/": true,
+				"refs/remotes/origin/master": false,
+				"refs/stash/": true,
+				"refs/tags/": true
+			},
+			"expanded_refs":
+			{
+				"refs/remotes": true,
+				"refs/remotes/origin": true
+			},
+			"locations_tab_selected": false,
+			"path": "/home/near/Documents/Code/lua_project/open_world",
+			"previous_commit_messages":
+			[
+				"init",
+				"camera ok ",
+				"add camera stalker",
+				"add github origin"
+			],
+			"search":
+			{
+				"history":
+				[
+					"file:\"main.lua\" line:1-65 from:cdf3143814015a39830c8ca87af8c8725d420a52",
+					"file:\"main.lua\" line:12-13 from:cdf3143814015a39830c8ca87af8c8725d420a52",
+					"file:main.lua"
+				]
+			},
+			"show_untracked_files": true,
+			"side_bar_visible": true,
+			"table_of_contents_tab_selected": true,
+			"table_of_contents_tree_mode": false
+		},
+		{
+			"locations_tab_selected": false,
+			"path": "/home/near/Documents/Code/lua",
+			"previous_commit_messages":
+			[
+				"Platformer beta",
+				"add media files"
+			],
+			"search":
+			{
+				"history":
+				[
+				]
+			},
+			"show_untracked_files": true,
+			"side_bar_visible": true,
+			"table_of_contents_tab_selected": false,
+			"table_of_contents_tree_mode": false
+		}
+	],
+	"select_repository":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"window_positions":
+	{
+		"/home/near/Documents/Code/zerai.xyz": "0,0,0,0,0,11,58,1180,882,1920,1680,2"
+	},
+	"windows":
+	[
+		{
+			"tabs":
+			[
+				{
+					"path": "/home/near/Documents/Code/zerai.xyz",
+					"selected": true
+				}
+			]
+		}
+	]
+}

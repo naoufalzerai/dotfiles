@@ -1,0 +1,16 @@
+[2022-08-18 16:03:24.054] [exthost] [info] Extension host with pid 819775 started
+[2022-08-18 16:03:24.054] [exthost] [info] Skipping acquiring lock for /home/near/.config/VSCodium/User/workspaceStorage/e58cdf8c1e35f13cbb316d38f127a3e7.
+[2022-08-18 16:03:24.090] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-08-18 16:03:24.093] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+[2022-08-18 16:03:24.095] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-08-18 16:03:24.097] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.sublime-keybindings, startup: true, activationEvent: '*'
+[2022-08-18 16:03:24.108] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-08-18 16:03:24.126] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-08-18 16:03:24.151] [exthost] [info] Eager extensions activated
+[2022-08-18 16:03:24.161] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-08-18 16:03:24.166] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-08-18 16:03:24.168] [exthost] [info] ExtensionService#_doActivateExtension bierner.emojisense, startup: false, activationEvent: 'onStartupFinished'
+[2022-08-18 16:03:24.175] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+[2022-08-18 16:03:34.292] [exthost] [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+[2022-08-18 16:07:39.570] [exthost] [info] Extension host terminating: received terminate message from renderer
+[2022-08-18 16:07:39.584] [exthost] [info] Extension host with pid 819775 exiting with code 0

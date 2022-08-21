@@ -1,0 +1,8 @@
+## Session // Exit App // <> q ##
+set_from_resource $i3-wm.binding.exit_app i3-wm.binding.exit_app q
+bindsym $mod+$i3-wm.binding.exit_app [con_id="__focused__"] kill
+
+## Modify // Sound Settings // <> s ##
+set_from_resource $i3-wm.binding.sound i3-wm.binding.sound s
+set_from_resource $i3-wm.program.sound i3-wm.program.sound gnome-control-center --class=floating_window sound
+bindsym $mod+$i3-wm.binding.sound exec $i3-wm.program.sound

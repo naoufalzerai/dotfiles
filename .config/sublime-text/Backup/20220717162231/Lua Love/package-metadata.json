@@ -1,0 +1,1 @@
+{"url": "https://github.com/szensk/subllualove", "dependencies": [], "version": "2.1.5", "platforms": ["*"], "description": "SublimeText Lua and Love2D package.", "sublime_text": ">=3092"}

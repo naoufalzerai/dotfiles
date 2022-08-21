@@ -1,0 +1,81 @@
+{
+	// Open the debugger automatically when a project that is set up for debugging
+	"open_at_startup" : true,
+
+	// Sets the entire scale of the UI
+	"ui_scale": 10,
+
+	// This value adjusts the estimated character width calculations used to align the ui
+	"ui_rem_width_scale": 1.0,
+	// If true ui_rem_width_scale will be adjusted based on if the debugger layout is over/under shooting the panel.
+	// Defaults to true on Windows/Linux
+	"ui_rem_width_scale_adjust_automatically": false,
+
+	// change at your own risk it may break the interface. Restart required to take effect
+	"font_face": "Monospace",
+
+	// Which external terminal should be used when an adapter requests an external terminal
+	// "platform" (default) uses Terminal on MacOS, CMD (Not tested) on Windows, (Unimplemented) on Linux
+	// "terminus" Opens a new terminal view using terminus. The terminus package must be installed https://github.com/randy3k/Terminus
+	"external_terminal": "terminus",
+
+	// hide the status bar of the window when the debugger panel is open
+	"hide_status_bar": false,
+
+	// keep the debugger panel open unless another panel is being displayed
+	"keep_panel_open": false,
+
+	// currently not implemented
+	"bring_window_to_front_on_pause" : false,
+
+	// Commands to run before opening any console views
+	"console_layout_begin": [
+		{
+			"command": "set_layout", 
+			"args": {
+				"cells": [[0, 0, 1, 1], [1, 0, 2, 1]],
+				"cols": [0, 0.666, 1],
+				"rows": [0, 1],
+			}		
+		},
+	],
+	// Commands to run after all console views are closed
+	"console_layout_end": [
+		{
+			"command": "set_layout", 
+			"args": {
+				"cells": [[0, 0, 1, 1]],
+				"cols": [0, 1],
+				"rows": [0, 1],
+			}
+		},
+	],
+	// Commands to place the focus in the desired group before a console view is opened
+	"console_layout_focus": [
+		{
+			"command": "focus_group", 
+			"args": { "group": 1 },
+		},
+	],
+
+	"development": false,
+	"log_info": false,
+	"log_exceptions": true,
+	"log_errors": true,
+
+	// sets a specific path for node if not set adapters that require node to run will use whatever is in your path
+	"node": null,
+
+	// sets a specific path for dlv if not set go will use whatever is in your path
+	"go_dlv": null,
+
+	// "auto", "always", "never"
+	"lldb_show_disassembly": "auto",
+	// "auto", "hex", "decimal", "binary"
+	"lldb_display_format": "auto",
+	"lldb_dereference_pointers": true,
+	// probably shouldn't set these
+	"lldb_library": null, // which lldb library to use
+	"lldb_python": null, // path to python (3.5 or greater?) that lldb will use
+}
+

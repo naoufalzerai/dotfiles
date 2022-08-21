@@ -1,0 +1,36 @@
+[
+  {
+    "command": [
+      "/opt/sublime_text/sublime_text",
+      "--detached"
+    ],
+    "working_directory": "/home/near"
+  },
+  {
+    "command": [
+      "/usr/bin/nautilus",
+      "--new-window"
+    ],
+    "working_directory": "/home/near"
+  },
+  {
+    "command": [
+      "/opt/sublime_merge/sublime_merge",
+      "--multiinstance",
+      "/home/near/Documents/Code/zerai.xyz"
+    ],
+    "working_directory": "/home/near"
+  },
+  {
+    "command": [
+      "gnome-terminal"
+    ],
+    "working_directory": "/home/near/Documents/Code/zerai.xyz"
+  },
+  {
+    "command": [
+      "gnome-terminal"
+    ],
+    "working_directory": "/home/near/Documents/Code/zerai.xyz"
+  }
+]

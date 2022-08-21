@@ -1,0 +1,52 @@
+{{/*  {{ $pag := $.Paginator }}
+{{ if gt $pag.TotalPages 1 }}
+<ul class="pagination">
+	<li class="page-item page-prev">
+	{{ if $pag.HasPrev }}
+    <a {{ if $pag.HasPrev }}href="{{ $pag.Prev.URL }}"{{ end }} class="page-link" aria-label="Previous"><span aria-hidden="true">← Prev page</span></a>
+	{{ end }}
+	</li>
+	<li class="page-item page-next">
+	{{ if $pag.HasNext }}
+    <a {{ if $pag.HasNext }}href="{{ $pag.Next.URL }}"{{ end }} class="page-link" aria-label="Next"><span aria-hidden="true">Next page →</span></a>
+	{{ end }}
+	</li>
+</ul>
+{{ end }}
+  */}}
+
+
+  {{- $Paginator := . -}}
+
+  {{- if gt $Paginator.TotalPages 1 -}}
+  
+  {{- $pageIndex := $Paginator.PageNumber -}}
+  {{- $totalPages := $Paginator.TotalPages -}}
+  {{- $cols := 5.0 -}}
+  {{- $rows := math.Ceil (div $totalPages $cols) -}}
+  {{- $row := math.Ceil (div $pageIndex $cols) -}}
+  {{- $startPage := sub (mul $row $cols) $cols -}}
+  {{- $endPage := add $startPage $cols -}}
+  
+  <div class="pagination">
+	  <ul>
+		  {{- if gt $row 1 -}}
+			  <li><a href="{{- $Paginator.Prev.URL -}}"><span class="iconfont icon-pagepreview"></span></a></li>
+		  {{- end -}}
+  
+		  {{- range $Paginator.Pagers -}}
+			  {{- if and (gt .PageNumber $startPage) (le .PageNumber $endPage) -}}
+				  {{- $active := "" -}}
+				  {{- if eq .PageNumber $Paginator.PageNumber -}}
+					  {{- $active = "active" -}}
+				  {{- end -}}
+				  <li><a class="{{- $active -}}" href="{{- .URL -}}">{{- .PageNumber -}}</a></li>
+			  {{- end -}}
+		  {{- end -}}
+  
+		  {{- if lt $row $rows -}}
+			  <li><a href="{{- $Paginator.Next.URL -}}"><span class="iconfont icon-pagenext"></span></a></li>
+		  {{- end -}}
+	  </ul>
+  </div>
+  {{- end -}}

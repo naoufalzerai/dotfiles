@@ -1,0 +1,77 @@
+[2022-08-17 16:52:28.987] [exthost] [info] Extension host with pid 1121462 started
+[2022-08-17 16:52:29.024] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-08-17 16:52:29.025] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+[2022-08-17 16:52:29.026] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-08-17 16:52:29.028] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.sublime-keybindings, startup: true, activationEvent: '*'
+[2022-08-17 16:52:29.035] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-08-17 16:52:29.046] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-08-17 16:52:29.059] [exthost] [info] Eager extensions activated
+[2022-08-17 16:52:29.064] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-08-17 16:52:29.068] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-08-17 16:52:29.069] [exthost] [info] ExtensionService#_doActivateExtension bierner.emojisense, startup: false, activationEvent: 'onStartupFinished'
+[2022-08-17 16:52:29.073] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+[2022-08-17 16:52:31.901] [exthost] [info] Extension host terminating: received terminate message from renderer
+[2022-08-17 16:52:31.904] [exthost] [info] Extension host with pid 1121462 exiting with code 0
+[2022-08-17 16:52:32.704] [exthost] [info] Extension host with pid 1121707 started
+[2022-08-17 16:52:32.704] [exthost] [info] Skipping acquiring lock for /home/near/.config/VSCodium/User/workspaceStorage/e58519af411028565401dfb6037c7e8b.
+[2022-08-17 16:52:32.734] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: 'onFileSystem:git', root cause: vscode.git
+[2022-08-17 16:52:32.736] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-08-17 16:52:32.737] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-08-17 16:52:32.739] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.sublime-keybindings, startup: true, activationEvent: '*'
+[2022-08-17 16:52:32.748] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'onFileSystem:git'
+[2022-08-17 16:52:32.760] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-08-17 16:52:32.782] [exthost] [info] Eager extensions activated
+[2022-08-17 16:52:32.854] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-08-17 16:52:32.857] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-08-17 16:52:32.858] [exthost] [info] ExtensionService#_doActivateExtension bierner.emojisense, startup: false, activationEvent: 'onStartupFinished'
+[2022-08-17 16:52:32.865] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+[2022-08-17 16:52:33.407] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.407] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.407] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.407] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.407] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.407] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.407] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.407] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 16:52:33.408] [exthost] [error] {"message":"Git error","stdout":"","stderr":"fatal: Pathspec '/home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes' is in submodule 'themes/lugo'\n","exitCode":128,"gitErrorCode":"IsInSubmodule"}
+[2022-08-17 20:05:02.484] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+[2022-08-17 20:05:02.488] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+[2022-08-17 20:05:02.491] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+[2022-08-17 20:05:02.536] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onLanguage:json'
+[2022-08-17 20:05:08.849] [exthost] [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+[2022-08-17 20:14:47.254] [exthost] [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+[2022-08-17 20:14:47.471] [exthost] [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+[2022-08-17 20:15:01.582] [exthost] [info] ExtensionService#_doActivateExtension vscode.image-preview, startup: false, activationEvent: 'onCustomEditor:imagePreview.previewEditor'

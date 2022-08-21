@@ -1,0 +1,113 @@
+{
+    //
+    // Live parser options
+    //
+
+    // Whatever to enable live parser
+    "live_parser": true,
+
+    // Live parser style: outline, dot or circle
+    "live_parser_style": "outline",
+
+    // Whatever to show errors messages in annotations (on right-hand edge of the view)
+    // Available from Sublime Text build 4050 (ignored in older versions)
+    "live_parser_annotations": true,
+
+    // Whatever to show errors messages in status bar
+    "live_parser_status_bar": true,
+
+    // Whatever make live parser persistent
+    "live_parser_persistent": false,
+
+    // Time after last change, after which is live parser run if no other change was made (in milliseconds)
+    // (Parser runs only if you are not typing more than this time)
+    "live_parser_window": 200,
+
+    // Timeout for live parser to execute (in seconds)
+    "live_parser_timeout": 1,
+
+    // Type of live parser
+    // auto   - uses luajit if available, else luac
+    // luajit - uses luajit executable to check errors in code (with loadfile())
+    //          useful if you use luajit features like imaginary numbers or long long
+    // luac   - uses luac executable to check errors in code
+    // custom - your own customizable parser, see bellow
+    "live_parser_type": "auto",
+
+    // Path to luac executable (used if live_parser_type is "luac")
+    "luac_path": "luac",
+
+    // Path to luajit executable (used if live_parser_type is "luajit")
+    "luajit_path": "luajit",
+
+    // Custom live parser command (used if live_parser_type is "custom")
+    // Code to parse is passed to stdin, error(s) should go to stderr in format:
+    // Line 123: Error message
+    "live_parser_custom_command": "",
+
+    //
+    // Build system options
+    //
+
+    // There you can tweak some build system settings:
+    //
+    // cmd (array of string)
+    //     Command to execute, may include variables, see bellow
+    // working_dir (string)
+    //     Working directory where command will be executed, may include variables, see bellow
+    // env (table of "key": "value" pairs)
+    //     Environment variables to use while building ("build_system.default.env" and "build_system.variant.env" will be merged)
+    // kill_previous (boolean)
+    //     Whatever to kill previous build before new is started
+    //
+    // See https://www.sublimetext.com/docs/build_systems.html for details and variables
+
+    // Default settings for all build variants
+    // (you can override them in individual variants settings with exception of env, which will be merged)
+
+    "build_system.default.env": {},
+
+    "build_system.default.kill_previous": true,
+
+
+    // LOVE variant
+    "build_system.love.cmd": ["love", "${project_path:${folder:${file_path}}}"],
+
+    "build_system.love.working_dir": "${project_path:${folder:${file_path}}}",
+
+    "build_system.love.env": {},
+
+    "build_system.love.kill_previous": true,
+
+
+    // LuaJIT variant
+    "build_system.luajit.cmd": ["luajit", "$file"],
+
+    "build_system.luajit.env": {},
+
+    "build_system.luajit.kill_previous": true,
+
+
+    // Lua variant
+    "build_system.lua.cmd": ["lua", "$file"],
+
+    "build_system.lua.env": {},
+
+    "build_system.lua.kill_previous": true,
+
+
+    // ldoc - file variant
+    "build_system.ldoc_file.cmd": ["ldoc", "-d", "$project_path/doc/$file_base_name", "-f", "markdown", "-t", "$file_base_name", "$file"],
+
+    "build_system.ldoc_file.env": {},
+
+    "build_system.ldoc_file.kill_previous": true,
+
+
+    // ldoc - project
+    "build_system.ldoc_project.cmd": ["ldoc", "-d", "$project_path/doc/$file_base_name", "-f", "markdown", "-t", "$file_base_name", "$file"],
+
+    "build_system.ldoc_project.env": {},
+
+    "build_system.ldoc_project.kill_previous": true,
+}

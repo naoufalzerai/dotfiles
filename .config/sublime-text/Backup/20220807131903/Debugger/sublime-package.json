@@ -1,0 +1,2409 @@
+{
+  "contributions": {
+    "settings": [
+      {
+        "file_patterns": [
+          "/*.sublime-project"
+        ],
+        "schema": {
+          "definitions": {
+            "lldb": {
+              "properties": {
+                "request": {
+                  "type": "string",
+                  "description": "Request type of configuration.",
+                  "enum": []
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of configuration; appears in the launch configuration drop down menu."
+                },
+                "pre_debug_task": {
+                  "type": "string",
+                  "description": "Name of task to run before debugging starts"
+                },
+                "post_debug_task": {
+                  "type": "string",
+                  "description": "name of task to run after debugging ends"
+                }
+              }
+            },
+            "gdb": {
+              "properties": {
+                "request": {
+                  "type": "string",
+                  "description": "Request type of configuration.",
+                  "enum": []
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of configuration; appears in the launch configuration drop down menu."
+                },
+                "pre_debug_task": {
+                  "type": "string",
+                  "description": "Name of task to run before debugging starts"
+                },
+                "post_debug_task": {
+                  "type": "string",
+                  "description": "name of task to run after debugging ends"
+                }
+              }
+            },
+            "firefox": {
+              "properties": {
+                "request": {
+                  "type": "string",
+                  "description": "Request type of configuration.",
+                  "enum": [
+                    "launch",
+                    "attach"
+                  ]
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of configuration; appears in the launch configuration drop down menu."
+                },
+                "pre_debug_task": {
+                  "type": "string",
+                  "description": "Name of task to run before debugging starts"
+                },
+                "post_debug_task": {
+                  "type": "string",
+                  "description": "name of task to run after debugging ends"
+                }
+              }
+            },
+            "firefox_launch": {
+              "required": [],
+              "properties": {
+                "file": {
+                  "type": "string",
+                  "description": "The file to open in the browser",
+                  "default": "${workspaceFolder}/index.html"
+                },
+                "url": {
+                  "type": "string",
+                  "description": "The url to open in the browser"
+                },
+                "webRoot": {
+                  "type": "string",
+                  "description": "If the 'url' property is specified, this property specifies the workspace absolute path corresponding to the path of the url",
+                  "default": "${workspaceFolder}"
+                },
+                "firefoxExecutable": {
+                  "type": "string",
+                  "description": "Absolute path to the Firefox executable"
+                },
+                "tmpDir": {
+                  "type": "string",
+                  "description": "The path of the directory to use for temporary files"
+                },
+                "profileDir": {
+                  "type": "string",
+                  "description": "The path of the Firefox profile directory to use"
+                },
+                "profile": {
+                  "type": "string",
+                  "description": "The name of the Firefox profile to use"
+                },
+                "keepProfileChanges": {
+                  "type": "boolean",
+                  "description": "Use the specified profile directly instead of a temporary copy",
+                  "default": true
+                },
+                "port": {
+                  "type": "number",
+                  "description": "The remote debugging port to use",
+                  "default": 6000
+                },
+                "timeout": {
+                  "type": "number",
+                  "description": "The timeout in seconds for the adapter to connect to Firefox after launching it",
+                  "default": 5
+                },
+                "firefoxArgs": {
+                  "type": "array",
+                  "description": "Additional arguments passed to Firefox",
+                  "items": {
+                    "type": "string"
+                  },
+                  "default": []
+                },
+                "reAttach": {
+                  "type": "boolean",
+                  "description": "Don't terminate Firefox at the end of the debugging session and re-attach to it when starting the next session",
+                  "default": true
+                },
+                "reloadOnAttach": {
+                  "type": "boolean",
+                  "description": "Reload all tabs after re-attaching to Firefox",
+                  "default": true
+                },
+                "reloadOnChange": {
+                  "description": "Watch the specified files, directories or glob patterns and reload the tabs or add-on when they change",
+                  "type": [
+                    "string",
+                    "array",
+                    "object"
+                  ],
+                  "items": {
+                    "type": "string"
+                  },
+                  "properties": {
+                    "watch": {
+                      "description": "Files, directories or glob patterns to be watched for file changes",
+                      "type": [
+                        "string",
+                        "array"
+                      ],
+                      "items": {
+                        "type": "string"
+                      },
+                      "default": "${workspaceFolder}/**/*.js"
+                    },
+                    "ignore": {
+                      "description": "Files, directories or glob patterns to be ignored",
+                      "type": [
+                        "string",
+                        "array"
+                      ],
+                      "items": {
+                        "type": "string"
+                      },
+                      "default": "**/node_modules/**"
+                    },
+                    "debounce": {
+                      "description": "The time in milliseconds to wait after a file change before reloading, or false to start reloading immediately",
+                      "type": [
+                        "number",
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "default": {
+                    "watch": "${workspaceFolder}/**/*.js",
+                    "ignore": "**/node_modules/**"
+                  }
+                },
+                "clearConsoleOnReload": {
+                  "type": "boolean",
+                  "description": "Clear the debug console in VS Code when the page is reloaded in Firefox",
+                  "default": false
+                },
+                "pathMappings": {
+                  "type": "array",
+                  "description": "Additional mappings from URLs (as seen by Firefox) to filesystem paths (as seen by VS Code)",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "url": {
+                        "type": "string",
+                        "description": "The URL as seen by Firefox"
+                      },
+                      "path": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "description": "The corresponding filesystem path as seen by VS Code"
+                      }
+                    }
+                  }
+                },
+                "skipFiles": {
+                  "type": "array",
+                  "description": "An array of glob patterns to skip when debugging",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "preferences": {
+                  "type": "object",
+                  "description": "Set additional Firefox preferences",
+                  "additionalProperties": {
+                    "type": [
+                      "boolean",
+                      "integer",
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "tabFilter": {
+                  "description": "Only attach to tabs whose URL matches this",
+                  "type": [
+                    "string",
+                    "array",
+                    "object"
+                  ],
+                  "items": {
+                    "type": "string"
+                  },
+                  "properties": {
+                    "include": {
+                      "description": "URLs to attach to",
+                      "type": [
+                        "string",
+                        "array"
+                      ],
+                      "items": {
+                        "type": "string"
+                      },
+                      "default": "*"
+                    },
+                    "exclude": {
+                      "description": "URLs not to attach to",
+                      "type": [
+                        "string",
+                        "array"
+                      ],
+                      "items": {
+                        "type": "string"
+                      },
+                      "default": []
+                    }
+                  },
+                  "default": "*"
+                },
+                "showConsoleCallLocation": {
+                  "type": "boolean",
+                  "description": "Show the location of console API calls",
+                  "default": true
+                },
+                "addonPath": {
+                  "type": "string",
+                  "description": "The path of the directory containing the WebExtension",
+                  "default": "${workspaceFolder}"
+                },
+                "popupAutohideButton": {
+                  "type": "boolean",
+                  "description": "Show a button in the status bar for toggling popup auto-hide (WebExtension debugging)",
+                  "default": false
+                },
+                "liftAccessorsFromPrototypes": {
+                  "type": "number",
+                  "description": "The number of prototype levels that should be scanned for accessor properties",
+                  "default": 0
+                },
+                "suggestPathMappingWizard": {
+                  "type": "boolean",
+                  "description": "Suggest using the Path Mapping Wizard when the user tries to set a breakpoint in an unmapped source during a debug session",
+                  "default": true
+                },
+                "enableCRAWorkaround": {
+                  "type": "boolean",
+                  "description": "Enable a workaround for breakpoints not working in projects created using create-react-app",
+                  "default": true
+                },
+                "log": {
+                  "type": "object",
+                  "description": "Configuration for diagnostic logging of the debug adapter",
+                  "properties": {
+                    "fileName": {
+                      "type": "string",
+                      "description": "The name of the logfile",
+                      "default": "${workspaceFolder}/vscode-firefox-debug.log"
+                    },
+                    "fileLevel": {
+                      "type": "object",
+                      "description": "The minimum loglevel(s) for messages written to the logfile",
+                      "properties": {
+                        "default": {
+                          "type": "string",
+                          "enum": [
+                            "Debug",
+                            "Info",
+                            "Warn",
+                            "Error"
+                          ],
+                          "description": "The default loglevel"
+                        }
+                      },
+                      "additionalProperties": {
+                        "type": "string",
+                        "enum": [
+                          "Debug",
+                          "Info",
+                          "Warn",
+                          "Error"
+                        ]
+                      },
+                      "default": {
+                        "default": "Debug"
+                      }
+                    },
+                    "consoleLevel": {
+                      "type": "object",
+                      "description": "The minimum loglevel(s) for messages written to the console",
+                      "properties": {
+                        "default": {
+                          "type": "string",
+                          "enum": [
+                            "Debug",
+                            "Info",
+                            "Warn",
+                            "Error"
+                          ],
+                          "description": "The default loglevel"
+                        }
+                      },
+                      "additionalProperties": {
+                        "type": "string",
+                        "enum": [
+                          "Debug",
+                          "Info",
+                          "Warn",
+                          "Error"
+                        ]
+                      },
+                      "default": {
+                        "default": "Debug"
+                      }
+                    }
+                  },
+                  "default": {
+                    "fileName": "${workspaceFolder}/vscode-firefox-debug.log",
+                    "fileLevel": {
+                      "default": "Debug"
+                    },
+                    "consoleLevel": {
+                      "default": "Warn"
+                    }
+                  }
+                },
+                "name": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "request": {
+                  "type": "string"
+                },
+                "pre_debug_task": {
+                  "type": "string"
+                },
+                "post_debug_task": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false,
+              "type": "object"
+            },
+            "firefox_attach": {
+              "required": [],
+              "properties": {
+                "url": {
+                  "type": "string",
+                  "description": "The url to open in the browser"
+                },
+                "webRoot": {
+                  "type": "string",
+                  "description": "If the 'url' property is specified, this property specifies the workspace absolute path corresponding to the path of the url",
+                  "default": "${workspaceFolder}"
+                },
+                "firefoxExecutable": {
+                  "type": "string",
+                  "description": "Absolute path to the Firefox executable"
+                },
+                "profileDir": {
+                  "type": "string",
+                  "description": "The path of the Firefox profile directory to use"
+                },
+                "port": {
+                  "type": "number",
+                  "description": "The remote debugging port to use",
+                  "default": 6000
+                },
+                "host": {
+                  "type": "string",
+                  "description": "The remote debugging host to use",
+                  "default": "localhost"
+                },
+                "reloadOnAttach": {
+                  "type": "boolean",
+                  "description": "Reload all tabs after attaching to Firefox",
+                  "default": false
+                },
+                "reloadOnChange": {
+                  "description": "Watch the specified files, directories or glob patterns and reload the tabs or add-on when they change",
+                  "type": [
+                    "string",
+                    "array",
+                    "object"
+                  ],
+                  "items": {
+                    "type": "string"
+                  },
+                  "properties": {
+                    "watch": {
+                      "description": "Files, directories or glob patterns to be watched for file changes",
+                      "type": [
+                        "string",
+                        "array"
+                      ],
+                      "items": {
+                        "type": "string"
+                      },
+                      "default": "${workspaceFolder}/**/*.js"
+                    },
+                    "ignore": {
+                      "description": "Files, directories or glob patterns to be ignored",
+                      "type": [
+                        "string",
+                        "array"
+                      ],
+                      "items": {
+                        "type": "string"
+                      },
+                      "default": "**/node_modules/**"
+                    },
+                    "debounce": {
+                      "description": "The time in milliseconds to wait after a file change before reloading, or false to start reloading immediately",
+                      "type": [
+                        "number",
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "default": {
+                    "watch": "${workspaceFolder}/**/*.js",
+                    "ignore": "**/node_modules/**"
+                  }
+                },
+                "clearConsoleOnReload": {
+                  "type": "boolean",
+                  "description": "Clear the debug console in VS Code when the page is reloaded in Firefox",
+                  "default": false
+                },
+                "pathMappings": {
+                  "type": "array",
+                  "description": "Additional mappings from URLs (as seen by Firefox) to filesystem paths (as seen by VS Code)",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "url": {
+                        "type": "string",
+                        "description": "The URL as seen by Firefox"
+                      },
+                      "path": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "description": "The corresponding filesystem path as seen by VS Code"
+                      }
+                    }
+                  }
+                },
+                "skipFiles": {
+                  "type": "array",
+                  "description": "An array of glob patterns to skip when debugging",
+                  "items": {
+                    "type": "string"
+                  },
+                  "default": [
+                    "${workspaceFolder}/node_modules/**/*"
+                  ]
+                },
+                "tabFilter": {
+                  "description": "Only attach to tabs whose URL matches this",
+                  "type": [
+                    "string",
+                    "array",
+                    "object"
+                  ],
+                  "items": {
+                    "type": "string"
+                  },
+                  "properties": {
+                    "include": {
+                      "description": "URLs to attach to",
+                      "type": [
+                        "string",
+                        "array"
+                      ],
+                      "items": {
+                        "type": "string"
+                      },
+                      "default": "*"
+                    },
+                    "exclude": {
+                      "description": "URLs not to attach to",
+                      "type": [
+                        "string",
+                        "array"
+                      ],
+                      "items": {
+                        "type": "string"
+                      },
+                      "default": []
+                    }
+                  },
+                  "default": "*"
+                },
+                "showConsoleCallLocation": {
+                  "type": "boolean",
+                  "description": "Show the location of console API calls",
+                  "default": true
+                },
+                "addonPath": {
+                  "type": "string",
+                  "description": "The path of the directory containing the WebExtension",
+                  "default": "${workspaceFolder}"
+                },
+                "popupAutohideButton": {
+                  "type": "boolean",
+                  "description": "Show a button in the status bar for toggling popup auto-hide (WebExtension debugging)",
+                  "default": false
+                },
+                "liftAccessorsFromPrototypes": {
+                  "type": "number",
+                  "description": "The number of prototype levels that should be scanned for accessor properties",
+                  "default": 0
+                },
+                "suggestPathMappingWizard": {
+                  "type": "boolean",
+                  "description": "Suggest using the Path Mapping Wizard when the user tries to set a breakpoint in an unmapped source during a debug session",
+                  "default": true
+                },
+                "enableCRAWorkaround": {
+                  "type": "boolean",
+                  "description": "Enable a workaround for breakpoints not working in projects created using create-react-app",
+                  "default": true
+                },
+                "log": {
+                  "type": "object",
+                  "description": "Configuration for diagnostic logging of the debug adapter",
+                  "properties": {
+                    "fileName": {
+                      "type": "string",
+                      "description": "The name of the logfile",
+                      "default": "${workspaceFolder}/vscode-firefox-debug.log"
+                    },
+                    "fileLevel": {
+                      "type": "object",
+                      "description": "The minimum loglevel(s) for messages written to the logfile",
+                      "properties": {
+                        "default": {
+                          "type": "string",
+                          "enum": [
+                            "Debug",
+                            "Info",
+                            "Warn",
+                            "Error"
+                          ],
+                          "description": "The default loglevel"
+                        }
+                      },
+                      "additionalProperties": {
+                        "type": "string",
+                        "enum": [
+                          "Debug",
+                          "Info",
+                          "Warn",
+                          "Error"
+                        ]
+                      },
+                      "default": {
+                        "default": "Debug"
+                      }
+                    },
+                    "consoleLevel": {
+                      "type": "object",
+                      "description": "The minimum loglevel(s) for messages written to the console",
+                      "properties": {
+                        "default": {
+                          "type": "string",
+                          "enum": [
+                            "Debug",
+                            "Info",
+                            "Warn",
+                            "Error"
+                          ],
+                          "description": "The default loglevel"
+                        }
+                      },
+                      "additionalProperties": {
+                        "type": "string",
+                        "enum": [
+                          "Debug",
+                          "Info",
+                          "Warn",
+                          "Error"
+                        ]
+                      },
+                      "default": {
+                        "default": "Debug"
+                      }
+                    }
+                  },
+                  "default": {
+                    "fileName": "${workspaceFolder}/vscode-firefox-debug.log",
+                    "fileLevel": {
+                      "default": "Debug"
+                    },
+                    "consoleLevel": {
+                      "default": "Warn"
+                    }
+                  }
+                },
+                "name": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "request": {
+                  "type": "string"
+                },
+                "pre_debug_task": {
+                  "type": "string"
+                },
+                "post_debug_task": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false,
+              "type": "object"
+            },
+            "go": {
+              "properties": {
+                "request": {
+                  "type": "string",
+                  "description": "Request type of configuration.",
+                  "enum": [
+                    "launch",
+                    "attach"
+                  ]
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of configuration; appears in the launch configuration drop down menu."
+                },
+                "pre_debug_task": {
+                  "type": "string",
+                  "description": "Name of task to run before debugging starts"
+                },
+                "post_debug_task": {
+                  "type": "string",
+                  "description": "name of task to run after debugging ends"
+                }
+              }
+            },
+            "go_launch": {
+              "required": [],
+              "properties": {
+                "debugAdapter": {
+                  "enum": [
+                    "legacy",
+                    "dlv-dap"
+                  ],
+                  "description": "Select which debug adapter to use with this launch configuration.",
+                  "default": "dlv-dap"
+                },
+                "program": {
+                  "type": "string",
+                  "description": "Path to the program folder (or any go file within that folder) when in `debug` or `test` mode, and to the pre-built binary file to debug in `exec` mode. If it is not an absolute path, the extension interpretes it as a workspace relative path.",
+                  "default": "${workspaceFolder}"
+                },
+                "mode": {
+                  "enum": [
+                    "auto",
+                    "debug",
+                    "test",
+                    "exec",
+                    "replay",
+                    "core"
+                  ],
+                  "description": "One of `auto`, `debug`, `test`, `exec`, `replay`, `core`. In `auto` mode, the extension will choose either `debug` or `test` depending on active editor window.",
+                  "default": "auto"
+                },
+                "traceDirPath": {
+                  "type": "string",
+                  "description": "Directory in which the record trace is located or to be created for a new output trace. For use on 'replay' mode only",
+                  "default": ""
+                },
+                "coreFilePath": {
+                  "type": "string",
+                  "description": "Path to the core dump file to open. For use on 'core' mode only",
+                  "default": ""
+                },
+                "stopOnEntry": {
+                  "type": "boolean",
+                  "description": "Automatically stop program after launch.",
+                  "default": false
+                },
+                "args": {
+                  "type": "array",
+                  "description": "Command line arguments passed to the debugged program.",
+                  "items": {
+                    "type": "string"
+                  },
+                  "default": []
+                },
+                "showLog": {
+                  "type": "boolean",
+                  "description": "Show log output from the delve debugger. Maps to dlv's `--log` flag.",
+                  "default": false
+                },
+                "cwd": {
+                  "type": "string",
+                  "description": "Workspace relative or absolute path to the working directory of the program being debugged if a non-empty value is specified. The `program` folder is used as the working directory if `cwd` is omitted or empty.",
+                  "default": ""
+                },
+                "env": {
+                  "type": "object",
+                  "description": "Environment variables passed to the launched debuggee program. Format as string key:value pairs. Merged with `envFile` and `go.toolsEnvVars` with precedence `env` > `envFile` > `go.toolsEnvVars`.",
+                  "default": {}
+                },
+                "substitutePath": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "from": {
+                        "type": "string",
+                        "description": "The absolute local path to be replaced when passing paths to the debugger.",
+                        "default": ""
+                      },
+                      "to": {
+                        "type": "string",
+                        "description": "The absolute remote path to be replaced when passing paths back to the client.",
+                        "default": ""
+                      }
+                    }
+                  },
+                  "description": "An array of mappings from a local path (editor) to the remote path (debugee). This setting is useful when working in a file system with symbolic links, running remote debugging, or debugging an executable compiled externally. The debug adapter will replace the local path with the remote path in all of the calls.",
+                  "default": []
+                },
+                "buildFlags": {
+                  "type": "string",
+                  "description": "Build flags, to be passed to the Go compiler. Maps to dlv's `--build-flags` flag.",
+                  "default": ""
+                },
+                "dlvFlags": {
+                  "type": "array",
+                  "description": "Extra flags for `dlv`. See `dlv help` for the full list of supported. Flags such as `--log-output`, `--log`, `--log-dest`, `--api-version`, `--output`, `--backend` already have corresponding properties in the debug configuration, and flags such as `--listen` and `--headless` are used internally. If they are specified in `dlvFlags`, they may be ignored or cause an error.",
+                  "items": {
+                    "type": "string"
+                  },
+                  "default": []
+                },
+                "port": {
+                  "type": "number",
+                  "description": "When applied to remote-attach configurations, will look for \"dlv ... --headless --listen=<host>:<port>\" server started externally. In dlv-dap mode this will apply to all other configurations as well. The extension will try to connect to an external server started with \"dlv dap --listen=<host>:<port>\" to ask it to launch/attach to the target process.",
+                  "default": 2345
+                },
+                "host": {
+                  "type": "string",
+                  "description": "When applied to remote-attach configurations, will look for \"dlv ... --headless --listen=<host>:<port>\" server started externally. In dlv-dap mode this will apply to all other configurations as well. The extension will try to connect to an external server started with \"dlv dap --listen=<host>:<port>\" to ask it to launch/attach to the target process.",
+                  "default": "127.0.0.1"
+                },
+                "trace": {
+                  "type": "string",
+                  "enum": [
+                    "verbose",
+                    "trace",
+                    "log",
+                    "info",
+                    "warn",
+                    "error"
+                  ],
+                  "default": "error",
+                  "description": "Various levels of logging shown in the debug console & 'Go Debug' output channel. When using the `legacy` debug adapter, the logs will also be written to a file if it is set to a value other than `error`."
+                },
+                "envFile": {
+                  "type": [
+                    "string",
+                    "array"
+                  ],
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Absolute path to a file containing environment variable definitions, formatted as string key=value pairs. Multiple files can be specified by provided an array of absolute paths. Merged with `env` and `go.toolsEnvVars` with precedence `env` > `envFile` > `go.toolsEnvVars`. ",
+                  "default": ""
+                },
+                "backend": {
+                  "type": "string",
+                  "enum": [
+                    "default",
+                    "native",
+                    "lldb",
+                    "rr"
+                  ],
+                  "description": "Backend used by delve. Maps to `dlv`'s `--backend` flag."
+                },
+                "output": {
+                  "type": "string",
+                  "description": "Output path for the binary of the debugee.",
+                  "default": "debug"
+                },
+                "logOutput": {
+                  "type": "string",
+                  "enum": [
+                    "debugger",
+                    "gdbwire",
+                    "lldbout",
+                    "debuglineerr",
+                    "rpc",
+                    "dap"
+                  ],
+                  "description": "Comma separated list of components that should produce debug output. Maps to dlv's `--log-output` flag. Check `dlv log` for details.",
+                  "default": "debugger"
+                },
+                "logDest": {
+                  "type": "string",
+                  "description": "dlv's `--log-dest` flag. See `dlv log` for details. Number argument is not allowed. Supported only in `dlv-dap` mode, and on Linux and Mac OS."
+                },
+                "dlvLoadConfig": {
+                  "type": "object",
+                  "properties": {
+                    "followPointers": {
+                      "type": "boolean",
+                      "description": "FollowPointers requests pointers to be automatically dereferenced.",
+                      "default": true
+                    },
+                    "maxVariableRecurse": {
+                      "type": "number",
+                      "description": "MaxVariableRecurse is how far to recurse when evaluating nested types.",
+                      "default": 1
+                    },
+                    "maxStringLen": {
+                      "type": "number",
+                      "description": "MaxStringLen is the maximum number of bytes read from a string.",
+                      "default": 64
+                    },
+                    "maxArrayValues": {
+                      "type": "number",
+                      "description": "MaxArrayValues is the maximum number of elements read from an array, a slice or a map.",
+                      "default": 64
+                    },
+                    "maxStructFields": {
+                      "type": "number",
+                      "description": "MaxStructFields is the maximum number of fields read from a struct, -1 will read all fields.",
+                      "default": -1
+                    }
+                  },
+                  "description": "LoadConfig describes to delve, how to load values from target's memory. Not applicable when using `dlv-dap` mode.",
+                  "default": {
+                    "followPointers": true,
+                    "maxVariableRecurse": 1,
+                    "maxStringLen": 64,
+                    "maxArrayValues": 64,
+                    "maxStructFields": -1
+                  }
+                },
+                "apiVersion": {
+                  "type": "number",
+                  "enum": [
+                    1,
+                    2
+                  ],
+                  "description": "Delve Api Version to use. Default value is 2. Maps to dlv's `--api-version` flag. Not applicable when using `dlv-dap` mode.",
+                  "default": 2
+                },
+                "stackTraceDepth": {
+                  "type": "number",
+                  "description": "Maximum depth of stack trace collected from Delve.",
+                  "default": 50
+                },
+                "showGlobalVariables": {
+                  "type": "boolean",
+                  "default": false,
+                  "description": "Boolean value to indicate whether global package variables should be shown in the variables pane or not."
+                },
+                "showRegisters": {
+                  "type": "boolean",
+                  "default": false,
+                  "description": "Boolean value to indicate whether register variables should be shown in the variables pane or not."
+                },
+                "hideSystemGoroutines": {
+                  "type": "boolean",
+                  "default": false,
+                  "description": "Boolean value to indicate whether system goroutines should be hidden from call stack view."
+                },
+                "console": {
+                  "default": "internalConsole",
+                  "description": "(Experimental) Where to launch the debugger and the debug target: internal console, integrated terminal, or external terminal. It is ignored in remote debugging.",
+                  "enum": [
+                    "internalConsole",
+                    "integratedTerminal",
+                    "externalTerminal"
+                  ]
+                },
+                "asRoot": {
+                  "default": false,
+                  "description": "(Experimental) Debug with elevated permissions (on Unix). It requires `integrated` or `external` console modes and is ignored in remote debugging.",
+                  "type": "boolean"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "request": {
+                  "type": "string"
+                },
+                "pre_debug_task": {
+                  "type": "string"
+                },
+                "post_debug_task": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false,
+              "type": "object"
+            },
+            "go_attach": {
+              "required": [],
+              "properties": {
+                "debugAdapter": {
+                  "enum": [
+                    "legacy",
+                    "dlv-dap"
+                  ],
+                  "description": "Select which debug adapter to use with this launch configuration.",
+                  "default": "dlv-dap"
+                },
+                "processId": {
+                  "anyOf": [
+                    {
+                      "enum": [
+                        "${command:pickProcess}",
+                        "${command:pickGoProcess}"
+                      ],
+                      "description": "Use process picker to select a process to attach, or Process ID as integer."
+                    },
+                    {
+                      "type": "string",
+                      "description": "Attach to a process by name. If more than one process matches the name, use the process picker to select a process."
+                    },
+                    {
+                      "type": "number",
+                      "description": "The numeric ID of the process to be debugged. If 0, use the process picker to select a process."
+                    }
+                  ],
+                  "default": 0
+                },
+                "mode": {
+                  "enum": [
+                    "local",
+                    "remote"
+                  ],
+                  "description": "Indicates local or remote debugging. Local is similar to the `dlv attach` command, remote - to `dlv connect`",
+                  "default": "local"
+                },
+                "stopOnEntry": {
+                  "type": "boolean",
+                  "description": "Automatically stop program after attach.",
+                  "default": false
+                },
+                "dlvFlags": {
+                  "type": "array",
+                  "description": "Extra flags for `dlv`. See `dlv help` for the full list of supported. Flags such as `--log-output`, `--log`, `--log-dest`, `--api-version`, `--output`, `--backend` already have corresponding properties in the debug configuration, and flags such as `--listen` and `--headless` are used internally. If they are specified in `dlvFlags`, they may be ignored or cause an error.",
+                  "items": {
+                    "type": "string"
+                  },
+                  "default": []
+                },
+                "showLog": {
+                  "type": "boolean",
+                  "description": "Show log output from the delve debugger. Maps to dlv's `--log` flag.",
+                  "default": false
+                },
+                "cwd": {
+                  "type": "string",
+                  "description": "Workspace relative or absolute path to the working directory of the program being debugged. Default is the current workspace.",
+                  "default": "${workspaceFolder}"
+                },
+                "remotePath": {
+                  "type": "string",
+                  "description": "The path to the source code on the remote machine, when the remote path is different from the local machine. If specified, becomes the first entry in substitutePath. Not supported with `dlv-dap`.",
+                  "markdownDeprecationMessage": "Use `substitutePath` instead.",
+                  "default": ""
+                },
+                "port": {
+                  "type": "number",
+                  "description": "When applied to remote-attach configurations, will look for \"dlv ... --headless --listen=<host>:<port>\" server started externally. In dlv-dap mode, this will apply to all other configurations as well. The extension will try to connect to an external server started with \"dlv dap --listen=<host>:<port>\" to ask it to launch/attach to the target process.",
+                  "default": 2345
+                },
+                "host": {
+                  "type": "string",
+                  "description": "When applied to remote-attach configurations, will look for \"dlv ... --headless --listen=<host>:<port>\" server started externally. In dlv-dap mode, this will apply to all other configurations as well. The extension will try to connect to an external server started with \"dlv dap --listen=<host>:<port>\" to ask it to launch/attach to the target process.",
+                  "default": "127.0.0.1"
+                },
+                "substitutePath": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "from": {
+                        "type": "string",
+                        "description": "The absolute local path to be replaced when passing paths to the debugger.",
+                        "default": ""
+                      },
+                      "to": {
+                        "type": "string",
+                        "description": "The absolute remote path to be replaced when passing paths back to the client.",
+                        "default": ""
+                      }
+                    }
+                  },
+                  "description": "An array of mappings from a local path (editor) to the remote path (debugee). This setting is useful when working in a file system with symbolic links, running remote debugging, or debugging an executable compiled externally. The debug adapter will replace the local path with the remote path in all of the calls.  Overriden by `remotePath`.",
+                  "default": []
+                },
+                "trace": {
+                  "type": "string",
+                  "enum": [
+                    "verbose",
+                    "trace",
+                    "log",
+                    "info",
+                    "warn",
+                    "error"
+                  ],
+                  "default": "error",
+                  "description": "Various levels of logging shown in the debug console & 'Go Debug' output channel. When using the `legacy` debug adapter, the logs will also be written to a file if it is set to a value other than `error`."
+                },
+                "backend": {
+                  "type": "string",
+                  "enum": [
+                    "default",
+                    "native",
+                    "lldb",
+                    "rr"
+                  ],
+                  "description": "Backend used by delve. Maps to `dlv`'s `--backend` flag."
+                },
+                "logOutput": {
+                  "type": "string",
+                  "enum": [
+                    "debugger",
+                    "gdbwire",
+                    "lldbout",
+                    "debuglineerr",
+                    "rpc",
+                    "dap"
+                  ],
+                  "description": "Comma separated list of components that should produce debug output. Maps to dlv's `--log-output` flag. Check `dlv log` for details.",
+                  "default": "debugger"
+                },
+                "logDest": {
+                  "type": "string",
+                  "description": "dlv's `--log-dest` flag. See `dlv log` for details. Number argument is not allowed. Supported only in `dlv-dap` mode and on Linux and Mac OS."
+                },
+                "dlvLoadConfig": {
+                  "type": "object",
+                  "properties": {
+                    "followPointers": {
+                      "type": "boolean",
+                      "description": "FollowPointers requests pointers to be automatically dereferenced",
+                      "default": true
+                    },
+                    "maxVariableRecurse": {
+                      "type": "number",
+                      "description": "MaxVariableRecurse is how far to recurse when evaluating nested types",
+                      "default": 1
+                    },
+                    "maxStringLen": {
+                      "type": "number",
+                      "description": "MaxStringLen is the maximum number of bytes read from a string",
+                      "default": 64
+                    },
+                    "maxArrayValues": {
+                      "type": "number",
+                      "description": "MaxArrayValues is the maximum number of elements read from an array, a slice or a map",
+                      "default": 64
+                    },
+                    "maxStructFields": {
+                      "type": "number",
+                      "description": "MaxStructFields is the maximum number of fields read from a struct, -1 will read all fields",
+                      "default": -1
+                    }
+                  },
+                  "description": "LoadConfig describes to delve, how to load values from target's memory. Not applicable when using `dlv-dap` mode.",
+                  "default": {
+                    "followPointers": true,
+                    "maxVariableRecurse": 1,
+                    "maxStringLen": 64,
+                    "maxArrayValues": 64,
+                    "maxStructFields": -1
+                  }
+                },
+                "apiVersion": {
+                  "type": "number",
+                  "enum": [
+                    1,
+                    2
+                  ],
+                  "description": "Delve Api Version to use. Default value is 2. Not applicable when using `dlv-dap` mode.",
+                  "default": 2
+                },
+                "stackTraceDepth": {
+                  "type": "number",
+                  "description": "Maximum depth of stack trace collected from Delve.",
+                  "default": 50
+                },
+                "showGlobalVariables": {
+                  "type": "boolean",
+                  "default": false,
+                  "description": "Boolean value to indicate whether global package variables should be shown in the variables pane or not."
+                },
+                "showRegisters": {
+                  "type": "boolean",
+                  "default": false,
+                  "description": "Boolean value to indicate whether register variables should be shown in the variables pane or not."
+                },
+                "hideSystemGoroutines": {
+                  "type": "boolean",
+                  "default": false,
+                  "description": "Boolean value to indicate whether system goroutines should be hidden from call stack view."
+                },
+                "console": {
+                  "default": "internalConsole",
+                  "description": "(Experimental) Where to launch the debugger: internal console, integrated terminal, or external terminal. This does not affect tty of the running program. It is ignored in remote debugging.",
+                  "enum": [
+                    "internalConsole",
+                    "integratedTerminal",
+                    "externalTerminal"
+                  ]
+                },
+                "asRoot": {
+                  "default": false,
+                  "description": "(Experimental) Debug with elevated permissions (on Unix). This requires `integrated` or `external` console modes and is ignored in remote debugging.",
+                  "type": "boolean"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "request": {
+                  "type": "string"
+                },
+                "pre_debug_task": {
+                  "type": "string"
+                },
+                "post_debug_task": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false,
+              "type": "object"
+            },
+            "php": {
+              "properties": {
+                "request": {
+                  "type": "string",
+                  "description": "Request type of configuration.",
+                  "enum": []
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of configuration; appears in the launch configuration drop down menu."
+                },
+                "pre_debug_task": {
+                  "type": "string",
+                  "description": "Name of task to run before debugging starts"
+                },
+                "post_debug_task": {
+                  "type": "string",
+                  "description": "name of task to run after debugging ends"
+                }
+              }
+            },
+            "python": {
+              "properties": {
+                "request": {
+                  "type": "string",
+                  "description": "Request type of configuration.",
+                  "enum": [
+                    "attach",
+                    "launch"
+                  ]
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of configuration; appears in the launch configuration drop down menu."
+                },
+                "pre_debug_task": {
+                  "type": "string",
+                  "description": "Name of task to run before debugging starts"
+                },
+                "post_debug_task": {
+                  "type": "string",
+                  "description": "name of task to run after debugging ends"
+                }
+              }
+            },
+            "python_attach": {
+              "properties": {
+                "connect": {
+                  "label": "Attach by connecting to debugpy over a socket.",
+                  "properties": {
+                    "host": {
+                      "default": "127.0.0.1",
+                      "description": "Hostname or IP address to connect to.",
+                      "type": "string"
+                    },
+                    "port": {
+                      "description": "Port to connect to.",
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "port"
+                  ],
+                  "type": "object"
+                },
+                "debugAdapterPath": {
+                  "description": "Path (fully qualified) to the python debug adapter executable.",
+                  "type": "string"
+                },
+                "django": {
+                  "default": false,
+                  "description": "Django debugging.",
+                  "type": "boolean"
+                },
+                "host": {
+                  "default": "127.0.0.1",
+                  "description": "Hostname or IP address to connect to.",
+                  "type": "string"
+                },
+                "jinja": {
+                  "default": null,
+                  "description": "Jinja template debugging (e.g. Flask).",
+                  "enum": [
+                    false,
+                    null,
+                    true
+                  ]
+                },
+                "justMyCode": {
+                  "default": true,
+                  "description": "If true, show and debug only user-written code. If false, show and debug all code, including library calls.",
+                  "type": "boolean"
+                },
+                "listen": {
+                  "label": "Attach by listening for incoming socket connection from debugpy",
+                  "properties": {
+                    "host": {
+                      "default": "127.0.0.1",
+                      "description": "Hostname or IP address of the interface to listen on.",
+                      "type": "string"
+                    },
+                    "port": {
+                      "description": "Port to listen on.",
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "port"
+                  ],
+                  "type": "object"
+                },
+                "logToFile": {
+                  "default": false,
+                  "description": "Enable logging of debugger events to a log file.",
+                  "type": "boolean"
+                },
+                "pathMappings": {
+                  "default": [],
+                  "items": {
+                    "label": "Path mapping",
+                    "properties": {
+                      "localRoot": {
+                        "default": "${workspaceFolder}",
+                        "label": "Local source root.",
+                        "type": "string"
+                      },
+                      "remoteRoot": {
+                        "default": "",
+                        "label": "Remote source root.",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "localRoot",
+                      "remoteRoot"
+                    ],
+                    "type": "object"
+                  },
+                  "label": "Path mappings.",
+                  "type": "array"
+                },
+                "port": {
+                  "description": "Port to connect to.",
+                  "type": "number"
+                },
+                "processId": {
+                  "anyOf": [
+                    {
+                      "default": "${command:pickProcess}",
+                      "description": "Use process picker to select a process to attach, or Process ID as integer.",
+                      "enum": [
+                        "${command:pickProcess}"
+                      ]
+                    },
+                    {
+                      "description": "ID of the local process to attach to.",
+                      "type": "integer"
+                    }
+                  ]
+                },
+                "redirectOutput": {
+                  "default": true,
+                  "description": "Redirect output.",
+                  "type": "boolean"
+                },
+                "showReturnValue": {
+                  "default": true,
+                  "description": "Show return value of functions when stepping.",
+                  "type": "boolean"
+                },
+                "subProcess": {
+                  "default": false,
+                  "description": "Whether to enable Sub Process debugging",
+                  "type": "boolean"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "request": {
+                  "type": "string"
+                },
+                "pre_debug_task": {
+                  "type": "string"
+                },
+                "post_debug_task": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false,
+              "type": "object"
+            },
+            "python_launch": {
+              "properties": {
+                "args": {
+                  "default": [],
+                  "description": "Command line arguments passed to the program",
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "autoReload": {
+                  "default": {},
+                  "description": "Configures automatic reload of code on edit.",
+                  "properties": {
+                    "enable": {
+                      "default": false,
+                      "description": "Automatically reload code on edit.",
+                      "type": "boolean"
+                    },
+                    "exclude": {
+                      "default": [
+                        "**/.git/**",
+                        "**/.metadata/**",
+                        "**/__pycache__/**",
+                        "**/node_modules/**",
+                        "**/site-packages/**"
+                      ],
+                      "description": "Glob patterns of paths to exclude from auto reload.",
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "include": {
+                      "default": [
+                        "**/*.py",
+                        "**/*.pyw"
+                      ],
+                      "description": "Glob patterns of paths to include in auto reload.",
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "type": "object"
+                },
+                "console": {
+                  "default": "integratedTerminal",
+                  "description": "Where to launch the debug target: internal console, integrated terminal, or external terminal.",
+                  "enum": [
+                    "externalTerminal",
+                    "integratedTerminal",
+                    "internalConsole"
+                  ]
+                },
+                "cwd": {
+                  "default": "${workspaceFolder}",
+                  "description": "Absolute path to the working directory of the program being debugged. Default is the root directory of the file (leave empty).",
+                  "type": "string"
+                },
+                "debugAdapterPath": {
+                  "description": "Path (fully qualified) to the python debug adapter executable.",
+                  "type": "string"
+                },
+                "django": {
+                  "default": false,
+                  "description": "Django debugging.",
+                  "type": "boolean"
+                },
+                "env": {
+                  "additionalProperties": {
+                    "type": "string"
+                  },
+                  "default": {},
+                  "description": "Environment variables defined as a key value pair. Property ends up being the Environment Variable and the value of the property ends up being the value of the Env Variable.",
+                  "type": "object"
+                },
+                "envFile": {
+                  "default": "${workspaceFolder}/.env",
+                  "description": "Absolute path to a file containing environment variable definitions.",
+                  "type": "string"
+                },
+                "gevent": {
+                  "default": false,
+                  "description": "Enable debugging of gevent monkey-patched code.",
+                  "type": "boolean"
+                },
+                "host": {
+                  "default": "localhost",
+                  "description": "IP address of the of the local debug server (default is localhost).",
+                  "type": "string"
+                },
+                "jinja": {
+                  "default": null,
+                  "description": "Jinja template debugging (e.g. Flask).",
+                  "enum": [
+                    false,
+                    null,
+                    true
+                  ]
+                },
+                "justMyCode": {
+                  "default": true,
+                  "description": "Debug only user-written code.",
+                  "type": "boolean"
+                },
+                "logToFile": {
+                  "default": false,
+                  "description": "Enable logging of debugger events to a log file.",
+                  "type": "boolean"
+                },
+                "module": {
+                  "default": "",
+                  "description": "Name of the module to be debugged.",
+                  "type": "string"
+                },
+                "pathMappings": {
+                  "default": [],
+                  "items": {
+                    "label": "Path mapping",
+                    "properties": {
+                      "localRoot": {
+                        "default": "${workspaceFolder}",
+                        "label": "Local source root.",
+                        "type": "string"
+                      },
+                      "remoteRoot": {
+                        "default": "",
+                        "label": "Remote source root.",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "localRoot",
+                      "remoteRoot"
+                    ],
+                    "type": "object"
+                  },
+                  "label": "Path mappings.",
+                  "type": "array"
+                },
+                "port": {
+                  "default": 0,
+                  "description": "Debug port (default is 0, resulting in the use of a dynamic port).",
+                  "type": "number"
+                },
+                "program": {
+                  "default": "${file}",
+                  "description": "Absolute path to the program.",
+                  "type": "string"
+                },
+                "purpose": {
+                  "default": [],
+                  "description": "Tells extension to use this configuration for test debugging, or when using debug-in-terminal command.",
+                  "items": {
+                    "enum": [
+                      "debug-test",
+                      "debug-in-terminal"
+                    ],
+                    "enumDescriptions": [
+                      "Use this configuration while debugging tests using test view or test debug commands.",
+                      "Use this configuration while debugging a file using debug in terminal button in the editor."
+                    ]
+                  },
+                  "type": "array"
+                },
+                "pyramid": {
+                  "default": false,
+                  "description": "Whether debugging Pyramid applications",
+                  "type": "boolean"
+                },
+                "python": {
+                  "default": "${command:python.interpreterPath}",
+                  "description": "Absolute path to the Python interpreter executable; overrides workspace configuration if set.",
+                  "type": "string"
+                },
+                "pythonArgs": {
+                  "default": [],
+                  "description": "Command-line arguments passed to the Python interpreter. To pass arguments to the debug target, use \"args\".",
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "redirectOutput": {
+                  "default": true,
+                  "description": "Redirect output.",
+                  "type": "boolean"
+                },
+                "showReturnValue": {
+                  "default": true,
+                  "description": "Show return value of functions when stepping.",
+                  "type": "boolean"
+                },
+                "stopOnEntry": {
+                  "default": false,
+                  "description": "Automatically stop after launch.",
+                  "type": "boolean"
+                },
+                "subProcess": {
+                  "default": false,
+                  "description": "Whether to enable Sub Process debugging",
+                  "type": "boolean"
+                },
+                "sudo": {
+                  "default": false,
+                  "description": "Running debug program under elevated permissions (on Unix).",
+                  "type": "boolean"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "request": {
+                  "type": "string"
+                },
+                "pre_debug_task": {
+                  "type": "string"
+                },
+                "post_debug_task": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false,
+              "type": "object"
+            },
+            "ruby": {
+              "properties": {
+                "request": {
+                  "type": "string",
+                  "description": "Request type of configuration.",
+                  "enum": []
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of configuration; appears in the launch configuration drop down menu."
+                },
+                "pre_debug_task": {
+                  "type": "string",
+                  "description": "Name of task to run before debugging starts"
+                },
+                "post_debug_task": {
+                  "type": "string",
+                  "description": "name of task to run after debugging ends"
+                }
+              }
+            },
+            "elixir": {
+              "properties": {
+                "request": {
+                  "type": "string",
+                  "description": "Request type of configuration.",
+                  "enum": []
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of configuration; appears in the launch configuration drop down menu."
+                },
+                "pre_debug_task": {
+                  "type": "string",
+                  "description": "Name of task to run before debugging starts"
+                },
+                "post_debug_task": {
+                  "type": "string",
+                  "description": "name of task to run after debugging ends"
+                }
+              }
+            },
+            "js": {
+              "properties": {
+                "request": {
+                  "type": "string",
+                  "description": "Request type of configuration.",
+                  "enum": []
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of configuration; appears in the launch configuration drop down menu."
+                },
+                "pre_debug_task": {
+                  "type": "string",
+                  "description": "Name of task to run before debugging starts"
+                },
+                "post_debug_task": {
+                  "type": "string",
+                  "description": "name of task to run after debugging ends"
+                }
+              }
+            },
+            "chrome": {
+              "properties": {
+                "request": {
+                  "type": "string",
+                  "description": "Request type of configuration.",
+                  "enum": []
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of configuration; appears in the launch configuration drop down menu."
+                },
+                "pre_debug_task": {
+                  "type": "string",
+                  "description": "Name of task to run before debugging starts"
+                },
+                "post_debug_task": {
+                  "type": "string",
+                  "description": "name of task to run after debugging ends"
+                }
+              }
+            },
+            "node": {
+              "properties": {
+                "request": {
+                  "type": "string",
+                  "description": "Request type of configuration.",
+                  "enum": []
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of configuration; appears in the launch configuration drop down menu."
+                },
+                "pre_debug_task": {
+                  "type": "string",
+                  "description": "Name of task to run before debugging starts"
+                },
+                "post_debug_task": {
+                  "type": "string",
+                  "description": "name of task to run after debugging ends"
+                }
+              }
+            },
+            "msedge": {
+              "properties": {
+                "request": {
+                  "type": "string",
+                  "description": "Request type of configuration.",
+                  "enum": []
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of configuration; appears in the launch configuration drop down menu."
+                },
+                "pre_debug_task": {
+                  "type": "string",
+                  "description": "Name of task to run before debugging starts"
+                },
+                "post_debug_task": {
+                  "type": "string",
+                  "description": "name of task to run after debugging ends"
+                }
+              }
+            },
+            "node-legacy": {
+              "properties": {
+                "request": {
+                  "type": "string",
+                  "description": "Request type of configuration.",
+                  "enum": []
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of configuration; appears in the launch configuration drop down menu."
+                },
+                "pre_debug_task": {
+                  "type": "string",
+                  "description": "Name of task to run before debugging starts"
+                },
+                "post_debug_task": {
+                  "type": "string",
+                  "description": "name of task to run after debugging ends"
+                }
+              }
+            },
+            "mock": {
+              "properties": {
+                "request": {
+                  "type": "string",
+                  "description": "Request type of configuration.",
+                  "enum": []
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of configuration; appears in the launch configuration drop down menu."
+                },
+                "pre_debug_task": {
+                  "type": "string",
+                  "description": "Name of task to run before debugging starts"
+                },
+                "post_debug_task": {
+                  "type": "string",
+                  "description": "name of task to run after debugging ends"
+                }
+              }
+            },
+            "lua-local": {
+              "properties": {
+                "request": {
+                  "type": "string",
+                  "description": "Request type of configuration.",
+                  "enum": [
+                    "launch"
+                  ]
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of configuration; appears in the launch configuration drop down menu."
+                },
+                "pre_debug_task": {
+                  "type": "string",
+                  "description": "Name of task to run before debugging starts"
+                },
+                "post_debug_task": {
+                  "type": "string",
+                  "description": "name of task to run after debugging ends"
+                }
+              }
+            },
+            "lua-local_launch": {
+              "properties": {
+                "scriptRoots": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Alternate paths to find lua scripts"
+                },
+                "breakInCoroutines": {
+                  "type": "boolean",
+                  "description": "Break on errors inside of coroutines",
+                  "default": true
+                },
+                "scriptFiles": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Glob pattern specifying Lua scripts to be debugged (required for breakpoints in source mapped files)"
+                },
+                "ignorePatterns": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Lua patterns specifying scripts to be ignored when stepping"
+                },
+                "stepUnmappedLines": {
+                  "type": "boolean",
+                  "description": "Step into lua when stepping through unmapped lines in source-mapped files",
+                  "default": true
+                },
+                "verbose": {
+                  "type": "boolean",
+                  "description": "Enable verbose output",
+                  "default": false
+                },
+                "stopOnEntry": {
+                  "type": "boolean",
+                  "description": "Pause debugging as soon as debugger attaches to program",
+                  "default": false
+                },
+                "cwd": {
+                  "type": "string",
+                  "description": "Working directory to launch Lua in",
+                  "default": "${workspaceFolder}"
+                },
+                "env": {
+                  "type": "object",
+                  "description": "Environment variables to set",
+                  "additionalProperties": {
+                    "type": "string"
+                  }
+                },
+                "args": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Arguments to pass to the program",
+                  "default": []
+                },
+                "program": {
+                  "oneOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "lua": {
+                          "type": "string",
+                          "description": "Lua stand-alone interpreter to use",
+                          "default": "lua"
+                        },
+                        "file": {
+                          "type": "string",
+                          "description": "The entry point file of the program",
+                          "default": "${file}"
+                        },
+                        "communication": {
+                          "enum": [
+                            "stdio",
+                            "pipe"
+                          ],
+                          "description": "Communication method between extension and debugger.",
+                          "default": "stdio"
+                        }
+                      },
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "command": {
+                          "type": "string",
+                          "description": "The custom command to run"
+                        },
+                        "communication": {
+                          "enum": [
+                            "stdio",
+                            "pipe"
+                          ],
+                          "description": "Communication method between extension and debugger.",
+                          "default": "stdio"
+                        }
+                      },
+                      "required": [
+                        "command"
+                      ],
+                      "additionalProperties": false
+                    }
+                  ]
+                },
+                "name": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "request": {
+                  "type": "string"
+                },
+                "pre_debug_task": {
+                  "type": "string"
+                },
+                "post_debug_task": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false,
+              "type": "object"
+            }
+          },
+          "properties": {
+            "debugger_configurations": {
+              "description": "Debugger Configurations",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "description": "Type of configuration.",
+                    "enum": [
+                      "firefox",
+                      "go",
+                      "python",
+                      "lua-local"
+                    ]
+                  }
+                },
+                "defaultSnippets": [
+                  {
+                    "label": "Firefox: Launch (file)",
+                    "body": {
+                      "type": "firefox",
+                      "request": "launch",
+                      "reAttach": true,
+                      "name": "${1:Launch index.html}",
+                      "file": "^\"\\${workspaceFolder}/${2:index.html}\""
+                    },
+                    "description": "Launch Firefox navigated to a local file in your project"
+                  },
+                  {
+                    "label": "Firefox: Launch (server)",
+                    "body": {
+                      "type": "firefox",
+                      "request": "launch",
+                      "reAttach": true,
+                      "name": "${1:Launch localhost}",
+                      "url": "${2:http://localhost/index.html}",
+                      "webRoot": "^\"\\${workspaceFolder}${3:}\""
+                    },
+                    "description": "Launch Firefox navigated to your project running on a server"
+                  },
+                  {
+                    "label": "Firefox: Attach",
+                    "body": {
+                      "type": "firefox",
+                      "request": "attach",
+                      "name": "${1:Attach}"
+                    },
+                    "description": "Attach to a running Firefox process"
+                  },
+                  {
+                    "label": "Firefox: WebExtension",
+                    "body": {
+                      "type": "firefox",
+                      "request": "launch",
+                      "reAttach": true,
+                      "name": "${1:Launch add-on}",
+                      "addonPath": "^\"\\${workspaceFolder}${2:}\""
+                    },
+                    "description": "Launch Firefox with your WebExtension project installed"
+                  },
+                  {
+                    "label": "Go: Launch package",
+                    "body": {
+                      "name": "${2:Launch Package}",
+                      "type": "go",
+                      "request": "launch",
+                      "mode": "auto",
+                      "program": "^\"\\${fileDirname}${1:}\""
+                    },
+                    "description": "Debug/test the package in the program attribute"
+                  },
+                  {
+                    "label": "Go: Launch file",
+                    "body": {
+                      "name": "${2:Launch file}",
+                      "type": "go",
+                      "request": "launch",
+                      "mode": "debug",
+                      "program": "^\"${1:\\${file\\}}\""
+                    },
+                    "description": "Debug the file in the program attribute"
+                  },
+                  {
+                    "label": "Go: Launch test function",
+                    "body": {
+                      "name": "${3:Launch test function}",
+                      "type": "go",
+                      "request": "launch",
+                      "mode": "test",
+                      "program": "^\"\\${workspaceFolder}${1:}\"",
+                      "args": [
+                        "-test.run",
+                        "${2:MyTestFunction}"
+                      ]
+                    },
+                    "description": "Debug the test function in the args, ensure program attributes points to right package"
+                  },
+                  {
+                    "label": "Go: Attach to local process",
+                    "body": {
+                      "name": "${1:Attach to Process}",
+                      "type": "go",
+                      "request": "attach",
+                      "mode": "local",
+                      "processId": 0
+                    },
+                    "description": "Attach to an existing process by process ID"
+                  },
+                  {
+                    "label": "Go: Connect to server",
+                    "body": {
+                      "name": "${1:Connect to server}",
+                      "type": "go",
+                      "request": "attach",
+                      "mode": "remote",
+                      "remotePath": "^\"\\${workspaceFolder}\"",
+                      "port": 2345,
+                      "host": "127.0.0.1"
+                    },
+                    "description": "Connect to a remote headless debug server"
+                  }
+                ],
+                "required": [
+                  "type",
+                  "name",
+                  "request"
+                ],
+                "allOf": [
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "lldb"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/lldb"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "gdb"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/gdb"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "firefox"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/firefox"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "firefox"
+                        },
+                        "request": {
+                          "const": "launch"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/firefox_launch"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "firefox"
+                        },
+                        "request": {
+                          "const": "attach"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/firefox_attach"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "go"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/go"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "go"
+                        },
+                        "request": {
+                          "const": "launch"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/go_launch"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "go"
+                        },
+                        "request": {
+                          "const": "attach"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/go_attach"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "php"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/php"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "python"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/python"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "python"
+                        },
+                        "request": {
+                          "const": "attach"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/python_attach"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "python"
+                        },
+                        "request": {
+                          "const": "launch"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/python_launch"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "ruby"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/ruby"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "elixir"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/elixir"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "js"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/js"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "chrome"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/chrome"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "node"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/node"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "msedge"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/msedge"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "node-legacy"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/node-legacy"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "mock"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/mock"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "lua-local"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/lua-local"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "lua-local"
+                        },
+                        "request": {
+                          "const": "launch"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/lua-local_launch"
+                    }
+                  }
+                ]
+              }
+            },
+            "debugger_tasks": {
+              "description": "Debugger Tasks",
+              "type": "array",
+              "items": {
+                "allOf": [
+                  {
+                    "$ref": "sublime://schemas/sublime-build"
+                  },
+                  {
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "name"
+                    ]
+                  }
+                ]
+              }
+            },
+            "debugger_compounds": {
+              "description": "Debugger Compounds",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "configurations": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": [
+                  "name",
+                  "configurations"
+                ]
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

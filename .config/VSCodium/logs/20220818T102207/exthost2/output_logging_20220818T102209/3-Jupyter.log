@@ -1,0 +1,18 @@
+VSCodium (1.70.1, undefined, desktop)
+Jupyter Extension Version: 2022.8.1002170547.
+Python Extension Version: 2022.12.0.
+Workspace folder /home/near/Documents/Code/python/youtube-stream-downloader
+info 10:22:9.588: ZMQ install verified.
+info 10:22:9.893: LSP Notebooks experiment is disabled -- not in treatment group
+info 10:22:9.952: Experiment status for python is {"enabled":true,"optInto":[],"optOutFrom":[]}
+info 10:22:10.19: Process Execution: > /bin/python3 -c "import pkgutil;import json;print("389a87b7-288f-4235-92bf-73bf19bf6491");print(json.dumps(list([x.name for x in pkgutil.iter_modules()])));print("389a87b7-288f-4235-92bf-73bf19bf6491");"
+> /bin/python3 -c "import pkgutil;import json;print("389a87b7-288f-4235-92bf-73bf19bf6491");print(json.dumps(list([x.name for x in pkgutil.iter_modules()])));print("389a87b7-288f-4235-92bf-73bf19bf6491");"
+info 10:22:10.24: Process Execution: > /bin/python3 -m pip list
+> /bin/python3 -m pip list
+info 11:28:24.68: Shutting down notebooks for 9772d7a7-63b7-48bd-8410-c73f98411d17
+info 11:28:24.68: Disposing HostJupyterExecution 2112c601-a507-4a98-9ab7-1d5fa7943999
+info 11:28:24.68: Disposing super HostJupyterExecution 2112c601-a507-4a98-9ab7-1d5fa7943999
+info 11:28:24.68: Disposing HostJupyterExecution 2112c601-a507-4a98-9ab7-1d5fa7943999
+info 11:28:24.68: Finished disposing HostJupyterExecution  2112c601-a507-4a98-9ab7-1d5fa7943999
+info 11:28:24.72: Cleaning up server cache 2112c601-a507-4a98-9ab7-1d5fa7943999
+info 11:28:24.72: Finished disposing HostJupyterExecution  2112c601-a507-4a98-9ab7-1d5fa7943999

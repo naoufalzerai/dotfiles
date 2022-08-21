@@ -1,0 +1,194 @@
+[
+    {
+        "id": "tools",
+        "children": [
+            {
+                "id": "debugger",
+                "caption": "Debugger",
+                "children": [
+                    {
+                        "caption": "Open",
+                        "command": "debugger",
+                        "args": {
+                            "action": "open"
+                        }
+                    },
+                    {
+                        "caption": "Quit",
+                        "command": "debugger",
+                        "args": {
+                            "action": "quit"
+                        }
+                    },
+                    {
+                        "caption": "Install Adapters",
+                        "command": "debugger",
+                        "args": {
+                            "action": "install_adapters"
+                        }
+                    },
+                    {
+                        "caption": "Add or Select Configuration",
+                        "command": "debugger",
+                        "args": {
+                            "action": "change_configuration"
+                        }
+                    },
+                    {
+                        "caption": "Add Configuration",
+                        "command": "debugger",
+                        "args": {
+                            "action": "add_configuration"
+                        }
+                    },
+                    {
+                        "caption": "-"
+                    },
+                    {
+                        "caption": "Start",
+                        "command": "debugger",
+                        "args": {
+                            "action": "start"
+                        }
+                    },
+                    {
+                        "caption": "Start (no debug)",
+                        "command": "debugger",
+                        "args": {
+                            "action": "start_no_debug"
+                        }
+                    },
+                    {
+                        "caption": "Stop",
+                        "command": "debugger",
+                        "args": {
+                            "action": "stop"
+                        }
+                    },
+                    {
+                        "caption": "Continue",
+                        "command": "debugger",
+                        "args": {
+                            "action": "continue"
+                        }
+                    },
+                    {
+                        "caption": "Pause",
+                        "command": "debugger",
+                        "args": {
+                            "action": "pause"
+                        }
+                    },
+                    {
+                        "caption": "Step Over",
+                        "command": "debugger",
+                        "args": {
+                            "action": "step_over"
+                        }
+                    },
+                    {
+                        "caption": "Step In",
+                        "command": "debugger",
+                        "args": {
+                            "action": "step_in"
+                        }
+                    },
+                    {
+                        "caption": "Step Out",
+                        "command": "debugger",
+                        "args": {
+                            "action": "step_out"
+                        }
+                    },
+                    {
+                        "caption": "Input Command",
+                        "command": "debugger",
+                        "args": {
+                            "action": "input_command"
+                        }
+                    },
+                    {
+                        "caption": "Run Task",
+                        "command": "debugger",
+                        "args": {
+                            "action": "run_task"
+                        }
+                    },
+                    {
+                        "caption": "Run Last Task",
+                        "command": "debugger",
+                        "args": {
+                            "action": "run_last_task"
+                        }
+                    },
+                    {
+                        "caption": "Add Function Breakpoint",
+                        "command": "debugger",
+                        "args": {
+                            "action": "add_function_breakpoint"
+                        }
+                    },
+                    {
+                        "caption": "Clear Breakpoints",
+                        "command": "debugger",
+                        "args": {
+                            "action": "clear_breakpoints"
+                        }
+                    },
+                    {
+                        "caption": "Clear Console",
+                        "command": "debugger",
+                        "args": {
+                            "action": "clear_console"
+                        }
+                    },
+                    {
+                        "caption": "Show Protocol",
+                        "command": "debugger",
+                        "args": {
+                            "action": "show_protocol"
+                        }
+                    },
+                    {
+                        "caption": "Add Watch Expression",
+                        "command": "debugger",
+                        "args": {
+                            "action": "add_watch_expression"
+                        }
+                    },
+                    {
+                        "caption": "Force Save",
+                        "command": "debugger",
+                        "args": {
+                            "action": "save_data"
+                        }
+                    },
+                    {
+                        "caption": "-"
+                    },
+                    {
+                        "caption": "LLDB Toggle Disassembly",
+                        "command": "debugger",
+                        "args": {
+                            "action": "lldb_toggle_disassembly"
+                        }
+                    },
+                    {
+                        "caption": "LLDB Display Options",
+                        "command": "debugger",
+                        "args": {
+                            "action": "lldb_display"
+                        }
+                    },
+                    {
+                        "caption": "LLDB Toggle Dereference",
+                        "command": "debugger",
+                        "args": {
+                            "action": "lldb_toggle_dereference"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

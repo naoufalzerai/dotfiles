@@ -1,0 +1,14 @@
+[2022-08-15 20:46:20.055] [exthost] [info] Extension host with pid 3821 started
+[2022-08-15 20:46:20.055] [exthost] [info] Skipping acquiring lock for /home/near/.config/VSCodium/User/workspaceStorage/f3d54e9a394fa28e06a59c8596192273.
+[2022-08-15 20:46:20.099] [exthost] [info] ExtensionService#_doActivateExtension Koihik.vscode-lua-format, startup: false, activationEvent: 'onLanguage:lua'
+[2022-08-15 20:46:20.102] [exthost] [info] ExtensionService#_doActivateExtension sumneko.lua, startup: false, activationEvent: 'onLanguage:lua'
+[2022-08-15 20:46:20.206] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-08-15 20:46:20.208] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+[2022-08-15 20:46:20.210] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-08-15 20:46:20.213] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.sublime-keybindings, startup: true, activationEvent: '*'
+[2022-08-15 20:46:20.229] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-08-15 20:46:20.243] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-08-15 20:46:20.268] [exthost] [info] Eager extensions activated
+[2022-08-15 20:46:20.280] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-08-15 20:46:20.286] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-08-15 20:46:20.288] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'

@@ -1,0 +1,1139 @@
+{
+  "contributions": {
+    "settings": [
+      {
+        "file_patterns": [
+          "/*.sublime-project"
+        ],
+        "schema": {
+          "definitions": {
+            "lldb": {
+              "properties": {
+                "request": {
+                  "type": "string",
+                  "description": "Request type of configuration.",
+                  "enum": []
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of configuration; appears in the launch configuration drop down menu."
+                },
+                "pre_debug_task": {
+                  "type": "string",
+                  "description": "Name of task to run before debugging starts"
+                },
+                "post_debug_task": {
+                  "type": "string",
+                  "description": "name of task to run after debugging ends"
+                }
+              }
+            },
+            "gdb": {
+              "properties": {
+                "request": {
+                  "type": "string",
+                  "description": "Request type of configuration.",
+                  "enum": []
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of configuration; appears in the launch configuration drop down menu."
+                },
+                "pre_debug_task": {
+                  "type": "string",
+                  "description": "Name of task to run before debugging starts"
+                },
+                "post_debug_task": {
+                  "type": "string",
+                  "description": "name of task to run after debugging ends"
+                }
+              }
+            },
+            "firefox": {
+              "properties": {
+                "request": {
+                  "type": "string",
+                  "description": "Request type of configuration.",
+                  "enum": []
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of configuration; appears in the launch configuration drop down menu."
+                },
+                "pre_debug_task": {
+                  "type": "string",
+                  "description": "Name of task to run before debugging starts"
+                },
+                "post_debug_task": {
+                  "type": "string",
+                  "description": "name of task to run after debugging ends"
+                }
+              }
+            },
+            "go": {
+              "properties": {
+                "request": {
+                  "type": "string",
+                  "description": "Request type of configuration.",
+                  "enum": []
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of configuration; appears in the launch configuration drop down menu."
+                },
+                "pre_debug_task": {
+                  "type": "string",
+                  "description": "Name of task to run before debugging starts"
+                },
+                "post_debug_task": {
+                  "type": "string",
+                  "description": "name of task to run after debugging ends"
+                }
+              }
+            },
+            "php": {
+              "properties": {
+                "request": {
+                  "type": "string",
+                  "description": "Request type of configuration.",
+                  "enum": []
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of configuration; appears in the launch configuration drop down menu."
+                },
+                "pre_debug_task": {
+                  "type": "string",
+                  "description": "Name of task to run before debugging starts"
+                },
+                "post_debug_task": {
+                  "type": "string",
+                  "description": "name of task to run after debugging ends"
+                }
+              }
+            },
+            "python": {
+              "properties": {
+                "request": {
+                  "type": "string",
+                  "description": "Request type of configuration.",
+                  "enum": [
+                    "attach",
+                    "launch"
+                  ]
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of configuration; appears in the launch configuration drop down menu."
+                },
+                "pre_debug_task": {
+                  "type": "string",
+                  "description": "Name of task to run before debugging starts"
+                },
+                "post_debug_task": {
+                  "type": "string",
+                  "description": "name of task to run after debugging ends"
+                }
+              }
+            },
+            "python_attach": {
+              "properties": {
+                "connect": {
+                  "label": "Attach by connecting to debugpy over a socket.",
+                  "properties": {
+                    "host": {
+                      "default": "127.0.0.1",
+                      "description": "Hostname or IP address to connect to.",
+                      "type": "string"
+                    },
+                    "port": {
+                      "description": "Port to connect to.",
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "port"
+                  ],
+                  "type": "object"
+                },
+                "debugAdapterPath": {
+                  "description": "Path (fully qualified) to the python debug adapter executable.",
+                  "type": "string"
+                },
+                "django": {
+                  "default": false,
+                  "description": "Django debugging.",
+                  "type": "boolean"
+                },
+                "host": {
+                  "default": "127.0.0.1",
+                  "description": "Hostname or IP address to connect to.",
+                  "type": "string"
+                },
+                "jinja": {
+                  "default": null,
+                  "description": "Jinja template debugging (e.g. Flask).",
+                  "enum": [
+                    false,
+                    null,
+                    true
+                  ]
+                },
+                "justMyCode": {
+                  "default": true,
+                  "description": "If true, show and debug only user-written code. If false, show and debug all code, including library calls.",
+                  "type": "boolean"
+                },
+                "listen": {
+                  "label": "Attach by listening for incoming socket connection from debugpy",
+                  "properties": {
+                    "host": {
+                      "default": "127.0.0.1",
+                      "description": "Hostname or IP address of the interface to listen on.",
+                      "type": "string"
+                    },
+                    "port": {
+                      "description": "Port to listen on.",
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "port"
+                  ],
+                  "type": "object"
+                },
+                "logToFile": {
+                  "default": false,
+                  "description": "Enable logging of debugger events to a log file.",
+                  "type": "boolean"
+                },
+                "pathMappings": {
+                  "default": [],
+                  "items": {
+                    "label": "Path mapping",
+                    "properties": {
+                      "localRoot": {
+                        "default": "${workspaceFolder}",
+                        "label": "Local source root.",
+                        "type": "string"
+                      },
+                      "remoteRoot": {
+                        "default": "",
+                        "label": "Remote source root.",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "localRoot",
+                      "remoteRoot"
+                    ],
+                    "type": "object"
+                  },
+                  "label": "Path mappings.",
+                  "type": "array"
+                },
+                "port": {
+                  "description": "Port to connect to.",
+                  "type": "number"
+                },
+                "processId": {
+                  "anyOf": [
+                    {
+                      "default": "${command:pickProcess}",
+                      "description": "Use process picker to select a process to attach, or Process ID as integer.",
+                      "enum": [
+                        "${command:pickProcess}"
+                      ]
+                    },
+                    {
+                      "description": "ID of the local process to attach to.",
+                      "type": "integer"
+                    }
+                  ]
+                },
+                "redirectOutput": {
+                  "default": true,
+                  "description": "Redirect output.",
+                  "type": "boolean"
+                },
+                "showReturnValue": {
+                  "default": true,
+                  "description": "Show return value of functions when stepping.",
+                  "type": "boolean"
+                },
+                "subProcess": {
+                  "default": false,
+                  "description": "Whether to enable Sub Process debugging",
+                  "type": "boolean"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "request": {
+                  "type": "string"
+                },
+                "pre_debug_task": {
+                  "type": "string"
+                },
+                "post_debug_task": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false,
+              "type": "object"
+            },
+            "python_launch": {
+              "properties": {
+                "args": {
+                  "default": [],
+                  "description": "Command line arguments passed to the program",
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "autoReload": {
+                  "default": {},
+                  "description": "Configures automatic reload of code on edit.",
+                  "properties": {
+                    "enable": {
+                      "default": false,
+                      "description": "Automatically reload code on edit.",
+                      "type": "boolean"
+                    },
+                    "exclude": {
+                      "default": [
+                        "**/.git/**",
+                        "**/.metadata/**",
+                        "**/__pycache__/**",
+                        "**/node_modules/**",
+                        "**/site-packages/**"
+                      ],
+                      "description": "Glob patterns of paths to exclude from auto reload.",
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "include": {
+                      "default": [
+                        "**/*.py",
+                        "**/*.pyw"
+                      ],
+                      "description": "Glob patterns of paths to include in auto reload.",
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "type": "object"
+                },
+                "console": {
+                  "default": "integratedTerminal",
+                  "description": "Where to launch the debug target: internal console, integrated terminal, or external terminal.",
+                  "enum": [
+                    "externalTerminal",
+                    "integratedTerminal",
+                    "internalConsole"
+                  ]
+                },
+                "cwd": {
+                  "default": "${workspaceFolder}",
+                  "description": "Absolute path to the working directory of the program being debugged. Default is the root directory of the file (leave empty).",
+                  "type": "string"
+                },
+                "debugAdapterPath": {
+                  "description": "Path (fully qualified) to the python debug adapter executable.",
+                  "type": "string"
+                },
+                "django": {
+                  "default": false,
+                  "description": "Django debugging.",
+                  "type": "boolean"
+                },
+                "env": {
+                  "additionalProperties": {
+                    "type": "string"
+                  },
+                  "default": {},
+                  "description": "Environment variables defined as a key value pair. Property ends up being the Environment Variable and the value of the property ends up being the value of the Env Variable.",
+                  "type": "object"
+                },
+                "envFile": {
+                  "default": "${workspaceFolder}/.env",
+                  "description": "Absolute path to a file containing environment variable definitions.",
+                  "type": "string"
+                },
+                "gevent": {
+                  "default": false,
+                  "description": "Enable debugging of gevent monkey-patched code.",
+                  "type": "boolean"
+                },
+                "host": {
+                  "default": "localhost",
+                  "description": "IP address of the of the local debug server (default is localhost).",
+                  "type": "string"
+                },
+                "jinja": {
+                  "default": null,
+                  "description": "Jinja template debugging (e.g. Flask).",
+                  "enum": [
+                    false,
+                    null,
+                    true
+                  ]
+                },
+                "justMyCode": {
+                  "default": true,
+                  "description": "Debug only user-written code.",
+                  "type": "boolean"
+                },
+                "logToFile": {
+                  "default": false,
+                  "description": "Enable logging of debugger events to a log file.",
+                  "type": "boolean"
+                },
+                "module": {
+                  "default": "",
+                  "description": "Name of the module to be debugged.",
+                  "type": "string"
+                },
+                "pathMappings": {
+                  "default": [],
+                  "items": {
+                    "label": "Path mapping",
+                    "properties": {
+                      "localRoot": {
+                        "default": "${workspaceFolder}",
+                        "label": "Local source root.",
+                        "type": "string"
+                      },
+                      "remoteRoot": {
+                        "default": "",
+                        "label": "Remote source root.",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "localRoot",
+                      "remoteRoot"
+                    ],
+                    "type": "object"
+                  },
+                  "label": "Path mappings.",
+                  "type": "array"
+                },
+                "port": {
+                  "default": 0,
+                  "description": "Debug port (default is 0, resulting in the use of a dynamic port).",
+                  "type": "number"
+                },
+                "program": {
+                  "default": "${file}",
+                  "description": "Absolute path to the program.",
+                  "type": "string"
+                },
+                "purpose": {
+                  "default": [],
+                  "description": "Tells extension to use this configuration for test debugging, or when using debug-in-terminal command.",
+                  "items": {
+                    "enum": [
+                      "debug-test",
+                      "debug-in-terminal"
+                    ],
+                    "enumDescriptions": [
+                      "Use this configuration while debugging tests using test view or test debug commands.",
+                      "Use this configuration while debugging a file using debug in terminal button in the editor."
+                    ]
+                  },
+                  "type": "array"
+                },
+                "pyramid": {
+                  "default": false,
+                  "description": "Whether debugging Pyramid applications",
+                  "type": "boolean"
+                },
+                "python": {
+                  "default": "${command:python.interpreterPath}",
+                  "description": "Absolute path to the Python interpreter executable; overrides workspace configuration if set.",
+                  "type": "string"
+                },
+                "pythonArgs": {
+                  "default": [],
+                  "description": "Command-line arguments passed to the Python interpreter. To pass arguments to the debug target, use \"args\".",
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "redirectOutput": {
+                  "default": true,
+                  "description": "Redirect output.",
+                  "type": "boolean"
+                },
+                "showReturnValue": {
+                  "default": true,
+                  "description": "Show return value of functions when stepping.",
+                  "type": "boolean"
+                },
+                "stopOnEntry": {
+                  "default": false,
+                  "description": "Automatically stop after launch.",
+                  "type": "boolean"
+                },
+                "subProcess": {
+                  "default": false,
+                  "description": "Whether to enable Sub Process debugging",
+                  "type": "boolean"
+                },
+                "sudo": {
+                  "default": false,
+                  "description": "Running debug program under elevated permissions (on Unix).",
+                  "type": "boolean"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "request": {
+                  "type": "string"
+                },
+                "pre_debug_task": {
+                  "type": "string"
+                },
+                "post_debug_task": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false,
+              "type": "object"
+            },
+            "ruby": {
+              "properties": {
+                "request": {
+                  "type": "string",
+                  "description": "Request type of configuration.",
+                  "enum": []
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of configuration; appears in the launch configuration drop down menu."
+                },
+                "pre_debug_task": {
+                  "type": "string",
+                  "description": "Name of task to run before debugging starts"
+                },
+                "post_debug_task": {
+                  "type": "string",
+                  "description": "name of task to run after debugging ends"
+                }
+              }
+            },
+            "elixir": {
+              "properties": {
+                "request": {
+                  "type": "string",
+                  "description": "Request type of configuration.",
+                  "enum": []
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of configuration; appears in the launch configuration drop down menu."
+                },
+                "pre_debug_task": {
+                  "type": "string",
+                  "description": "Name of task to run before debugging starts"
+                },
+                "post_debug_task": {
+                  "type": "string",
+                  "description": "name of task to run after debugging ends"
+                }
+              }
+            },
+            "lua-local": {
+              "properties": {
+                "request": {
+                  "type": "string",
+                  "description": "Request type of configuration.",
+                  "enum": [
+                    "launch"
+                  ]
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of configuration; appears in the launch configuration drop down menu."
+                },
+                "pre_debug_task": {
+                  "type": "string",
+                  "description": "Name of task to run before debugging starts"
+                },
+                "post_debug_task": {
+                  "type": "string",
+                  "description": "name of task to run after debugging ends"
+                }
+              }
+            },
+            "lua-local_launch": {
+              "properties": {
+                "scriptRoots": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Alternate paths to find lua scripts"
+                },
+                "breakInCoroutines": {
+                  "type": "boolean",
+                  "description": "Break on errors inside of coroutines",
+                  "default": true
+                },
+                "scriptFiles": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Glob pattern specifying Lua scripts to be debugged (required for breakpoints in source mapped files)"
+                },
+                "ignorePatterns": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Lua patterns specifying scripts to be ignored when stepping"
+                },
+                "stepUnmappedLines": {
+                  "type": "boolean",
+                  "description": "Step into lua when stepping through unmapped lines in source-mapped files",
+                  "default": true
+                },
+                "verbose": {
+                  "type": "boolean",
+                  "description": "Enable verbose output",
+                  "default": false
+                },
+                "stopOnEntry": {
+                  "type": "boolean",
+                  "description": "Pause debugging as soon as debugger attaches to program",
+                  "default": false
+                },
+                "cwd": {
+                  "type": "string",
+                  "description": "Working directory to launch Lua in",
+                  "default": "${workspaceFolder}"
+                },
+                "env": {
+                  "type": "object",
+                  "description": "Environment variables to set",
+                  "additionalProperties": {
+                    "type": "string"
+                  }
+                },
+                "args": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Arguments to pass to the program",
+                  "default": []
+                },
+                "program": {
+                  "oneOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "lua": {
+                          "type": "string",
+                          "description": "Lua stand-alone interpreter to use",
+                          "default": "lua"
+                        },
+                        "file": {
+                          "type": "string",
+                          "description": "The entry point file of the program",
+                          "default": "${file}"
+                        },
+                        "communication": {
+                          "enum": [
+                            "stdio",
+                            "pipe"
+                          ],
+                          "description": "Communication method between extension and debugger.",
+                          "default": "stdio"
+                        }
+                      },
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "command": {
+                          "type": "string",
+                          "description": "The custom command to run"
+                        },
+                        "communication": {
+                          "enum": [
+                            "stdio",
+                            "pipe"
+                          ],
+                          "description": "Communication method between extension and debugger.",
+                          "default": "stdio"
+                        }
+                      },
+                      "required": [
+                        "command"
+                      ],
+                      "additionalProperties": false
+                    }
+                  ]
+                },
+                "name": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "request": {
+                  "type": "string"
+                },
+                "pre_debug_task": {
+                  "type": "string"
+                },
+                "post_debug_task": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false,
+              "type": "object"
+            },
+            "js": {
+              "properties": {
+                "request": {
+                  "type": "string",
+                  "description": "Request type of configuration.",
+                  "enum": []
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of configuration; appears in the launch configuration drop down menu."
+                },
+                "pre_debug_task": {
+                  "type": "string",
+                  "description": "Name of task to run before debugging starts"
+                },
+                "post_debug_task": {
+                  "type": "string",
+                  "description": "name of task to run after debugging ends"
+                }
+              }
+            },
+            "chrome": {
+              "properties": {
+                "request": {
+                  "type": "string",
+                  "description": "Request type of configuration.",
+                  "enum": []
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of configuration; appears in the launch configuration drop down menu."
+                },
+                "pre_debug_task": {
+                  "type": "string",
+                  "description": "Name of task to run before debugging starts"
+                },
+                "post_debug_task": {
+                  "type": "string",
+                  "description": "name of task to run after debugging ends"
+                }
+              }
+            },
+            "node": {
+              "properties": {
+                "request": {
+                  "type": "string",
+                  "description": "Request type of configuration.",
+                  "enum": []
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of configuration; appears in the launch configuration drop down menu."
+                },
+                "pre_debug_task": {
+                  "type": "string",
+                  "description": "Name of task to run before debugging starts"
+                },
+                "post_debug_task": {
+                  "type": "string",
+                  "description": "name of task to run after debugging ends"
+                }
+              }
+            },
+            "msedge": {
+              "properties": {
+                "request": {
+                  "type": "string",
+                  "description": "Request type of configuration.",
+                  "enum": []
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of configuration; appears in the launch configuration drop down menu."
+                },
+                "pre_debug_task": {
+                  "type": "string",
+                  "description": "Name of task to run before debugging starts"
+                },
+                "post_debug_task": {
+                  "type": "string",
+                  "description": "name of task to run after debugging ends"
+                }
+              }
+            },
+            "node-legacy": {
+              "properties": {
+                "request": {
+                  "type": "string",
+                  "description": "Request type of configuration.",
+                  "enum": []
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of configuration; appears in the launch configuration drop down menu."
+                },
+                "pre_debug_task": {
+                  "type": "string",
+                  "description": "Name of task to run before debugging starts"
+                },
+                "post_debug_task": {
+                  "type": "string",
+                  "description": "name of task to run after debugging ends"
+                }
+              }
+            },
+            "mock": {
+              "properties": {
+                "request": {
+                  "type": "string",
+                  "description": "Request type of configuration.",
+                  "enum": []
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of configuration; appears in the launch configuration drop down menu."
+                },
+                "pre_debug_task": {
+                  "type": "string",
+                  "description": "Name of task to run before debugging starts"
+                },
+                "post_debug_task": {
+                  "type": "string",
+                  "description": "name of task to run after debugging ends"
+                }
+              }
+            }
+          },
+          "properties": {
+            "debugger_configurations": {
+              "description": "Debugger Configurations",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "description": "Type of configuration.",
+                    "enum": [
+                      "python",
+                      "lua-local"
+                    ]
+                  }
+                },
+                "defaultSnippets": [],
+                "required": [
+                  "type",
+                  "name",
+                  "request"
+                ],
+                "allOf": [
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "lldb"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/lldb"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "gdb"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/gdb"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "firefox"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/firefox"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "go"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/go"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "php"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/php"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "python"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/python"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "python"
+                        },
+                        "request": {
+                          "const": "attach"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/python_attach"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "python"
+                        },
+                        "request": {
+                          "const": "launch"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/python_launch"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "ruby"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/ruby"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "elixir"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/elixir"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "lua-local"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/lua-local"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "lua-local"
+                        },
+                        "request": {
+                          "const": "launch"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/lua-local_launch"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "js"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/js"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "chrome"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/chrome"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "node"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/node"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "msedge"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/msedge"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "node-legacy"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/node-legacy"
+                    }
+                  },
+                  {
+                    "if": {
+                      "properties": {
+                        "type": {
+                          "const": "mock"
+                        }
+                      }
+                    },
+                    "then": {
+                      "$ref": "#/definitions/mock"
+                    }
+                  }
+                ]
+              }
+            },
+            "debugger_tasks": {
+              "description": "Debugger Tasks",
+              "type": "array",
+              "items": {
+                "allOf": [
+                  {
+                    "$ref": "sublime://schemas/sublime-build"
+                  },
+                  {
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "name"
+                    ]
+                  }
+                ]
+              }
+            },
+            "debugger_compounds": {
+              "description": "Debugger Compounds",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "configurations": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": [
+                  "name",
+                  "configurations"
+                ]
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

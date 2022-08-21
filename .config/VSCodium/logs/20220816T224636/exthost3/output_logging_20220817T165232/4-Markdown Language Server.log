@@ -1,0 +1,206 @@
+[Debug 00:14:47.448] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/themes/pure/archetypes/default.md
+[Debug 00:14:47.450] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/themes/pure/archetypes/default.md
+[Debug 00:14:47.646] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/themes/pure/archetypes/default.md
+[Debug 00:14:50.090] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes/default.md
+[Debug 00:14:50.090] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes/default.md
+[Debug 00:14:50.273] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/themes/lugo/archetypes/default.md
+[Debug 00:14:56.626] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/themes/pure/archetypes/default.md
+[Debug 00:14:56.627] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/themes/pure/archetypes/default.md
+[Debug 00:14:56.810] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/themes/pure/archetypes/default.md
+[Debug 00:15:11.423] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/homepage/about.md
+[Debug 00:15:11.429] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/homepage/about.md
+[Debug 00:15:11.618] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/homepage/about.md
+[Debug 00:15:13.281] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/homepage/index.md
+[Debug 00:15:13.285] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/homepage/index.md
+[Debug 00:15:13.466] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/homepage/index.md
+[Debug 00:15:16.772] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/posts/_index.md
+[Debug 00:15:16.776] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/posts/_index.md
+[Debug 00:15:16.968] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/posts/_index.md
+[Debug 00:15:18.435] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/posts/emoji-support.md
+[Debug 00:15:18.443] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/posts/emoji-support.md
+[Debug 00:15:18.616] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/posts/emoji-support.md
+[Debug 00:15:27.627] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/posts/markdown-syntax.md
+[Debug 00:15:27.645] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/posts/markdown-syntax.md
+[Debug 00:15:27.823] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/posts/markdown-syntax.md
+[Debug 00:15:32.714] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/posts/placeholder-text.md
+[Debug 00:15:32.719] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/posts/placeholder-text.md
+[Debug 00:15:32.897] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/posts/placeholder-text.md
+[Debug 00:15:33.492] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/posts/rich-content.md
+[Debug 00:15:33.508] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/posts/rich-content.md
+[Debug 00:15:33.689] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/posts/rich-content.md
+[Debug 00:15:52.630] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/about.md
+[Debug 00:15:52.646] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/about.md
+[Debug 00:15:52.827] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/about.md
+[Debug 00:16:06.271] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/about.md
+[Debug 00:16:07.098] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/about.md
+[Debug 00:16:07.131] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/about.md
+[Debug 00:16:12.751] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/about.md
+[Debug 00:16:12.757] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/about.md
+[Debug 00:16:12.925] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/about.md
+[Debug 00:16:15.340] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:15.341] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:15.523] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:17.973] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/about.md
+[Debug 00:16:29.498] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/about.md
+[Debug 00:16:29.780] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/blog/hello-world.md
+[Debug 00:16:29.783] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/content/blog/hello-world.md
+[Debug 00:16:29.961] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/blog/hello-world.md
+[Debug 00:16:30.855] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/about.md
+[Debug 00:16:32.147] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:34.839] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:34.839] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:35.030] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:35.051] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:35.164] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:35.331] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:35.832] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:36.267] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:36.267] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:37.067] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:37.316] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:37.317] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:37.334] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:37.381] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:37.464] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:37.549] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:37.582] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:38.118] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:40.398] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:40.838] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:41.016] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:41.691] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:41.747] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:42.297] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:43.066] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:43.492] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:43.664] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:43.782] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:44.198] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:44.214] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:45.360] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:45.360] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:45.598] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:45.665] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:45.698] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:45.714] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:45.731] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:46.335] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/about.md
+[Debug 00:16:49.102] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:49.277] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:50.373] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:50.374] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:50.374] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:50.397] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:50.564] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:50.616] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:50.698] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:50.714] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:16:51.365] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Trace 00:16:51.861] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:17:00.111] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/about.md
+[Debug 00:17:04.232] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/about.md
+[Debug 00:17:04.282] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/about.md
+[Debug 00:17:04.299] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/themes/pure/exampleSite/content/about.md
+[Debug 00:17:05.101] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:17:05.276] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:17:05.276] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:17:06.232] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:17:06.232] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:17:06.373] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:17:06.531] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:17:06.698] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:17:06.714] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:17:07.174] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:17:08.547] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:17:08.547] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:17:09.348] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Trace 00:17:09.362] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:17:13.600] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:17:13.600] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:17:14.132] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:17:14.132] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:17:14.679] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:17:14.679] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:17:15.240] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:17:15.240] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:17:16.041] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:17:16.999] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:17:16.999] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Trace 00:17:17.465] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:17:17.801] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:18:39.559] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:18:39.559] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:18:39.766] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:18:39.766] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:18:39.937] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:18:40.116] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:18:40.116] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:18:40.291] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:18:40.645] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:18:40.645] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:18:40.734] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:18:40.735] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:18:40.808] ReferencesProvider: getReferencesAtPosition: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:18:40.925] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:18:41.258] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:18:41.258] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:18:41.660] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:18:41.660] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Trace 00:18:42.364] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:18:42.459] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:18:49.821] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 00:18:49.821] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Trace 00:34:36.299] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///home/near/Documents/Code/zerai.xyz/themes/ezhil/LICENSE.md
+[Trace 00:34:36.302] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///home/near/Documents/Code/zerai.xyz/themes/ezhil/README.md
+[Trace 00:34:36.305] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///home/near/Documents/Code/zerai.xyz/themes/ezhil/archetypes/default.md
+[Trace 00:34:36.307] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///home/near/Documents/Code/zerai.xyz/themes/ezhil/exampleSite/archetypes/default.md
+[Trace 00:34:36.310] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///home/near/Documents/Code/zerai.xyz/themes/ezhil/exampleSite/content/about.md
+[Trace 00:34:36.313] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///home/near/Documents/Code/zerai.xyz/themes/ezhil/exampleSite/content/posts/post-2.md
+[Trace 00:34:36.315] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///home/near/Documents/Code/zerai.xyz/themes/ezhil/exampleSite/content/posts/post-3.md
+[Trace 00:34:36.318] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///home/near/Documents/Code/zerai.xyz/themes/ezhil/exampleSite/content/posts/post-4.md
+[Trace 00:34:36.321] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///home/near/Documents/Code/zerai.xyz/themes/ezhil/exampleSite/content/posts/post-5.md
+[Trace 00:34:36.325] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///home/near/Documents/Code/zerai.xyz/themes/ezhil/exampleSite/content/posts/post-6.md
+[Trace 00:34:36.328] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///home/near/Documents/Code/zerai.xyz/themes/ezhil/exampleSite/content/posts/post-7.md
+[Trace 00:34:36.330] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///home/near/Documents/Code/zerai.xyz/themes/ezhil/exampleSite/content/posts/post-1.md
+[Debug 00:34:49.036] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/themes/ezhil/archetypes/default.md
+[Debug 00:34:49.047] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/themes/ezhil/archetypes/default.md
+[Debug 00:34:49.231] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/themes/ezhil/archetypes/default.md
+[Debug 00:34:55.008] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/themes/ezhil/exampleSite/content/posts/post-1.md
+[Debug 00:34:55.034] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/themes/ezhil/exampleSite/content/posts/post-1.md
+[Debug 00:34:55.203] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/themes/ezhil/exampleSite/content/posts/post-1.md
+[Debug 00:55:42.450] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 01:01:26.227] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/blog/hello-world.md
+[Debug 01:01:26.228] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/content/blog/hello-world.md
+[Debug 01:01:26.411] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/blog/hello-world.md
+[Debug 01:01:30.461] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/post/hello-world.md
+[Debug 01:01:30.466] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/content/post/hello-world.md
+[Debug 01:01:30.638] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/post/hello-world.md
+[Debug 01:01:41.617] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/posts/hello-world.md
+[Debug 01:01:41.625] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/content/posts/hello-world.md
+[Debug 01:01:41.789] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/posts/hello-world.md
+[Debug 01:01:53.783] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 01:02:00.731] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/themes/ezhil/exampleSite/content/posts/post-1.md
+[Debug 01:02:00.733] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/themes/ezhil/exampleSite/content/posts/post-1.md
+[Debug 01:02:00.894] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/themes/ezhil/exampleSite/content/posts/post-1.md
+[Debug 01:02:15.876] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 01:02:18.255] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/themes/ezhil/exampleSite/content/posts/post-1.md
+[Debug 01:02:19.515] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 01:02:21.372] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 01:02:21.372] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 01:02:22.173] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 01:02:23.168] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 01:02:23.168] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 01:02:24.081] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 01:02:24.081] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 01:02:24.882] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 01:02:25.491] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 01:02:25.491] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Trace 01:02:26.012] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 01:02:26.292] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 01:02:46.258] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/posts/hello-world.md
+[Debug 01:02:46.264] LinkProvider: compute - file:///home/near/Documents/Code/zerai.xyz/content/posts/hello-world.md
+[Debug 01:02:46.443] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/posts/hello-world.md
+[Debug 01:02:48.149] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 01:02:48.149] TableOfContentsProvider: create - file:///home/near/Documents/Code/zerai.xyz/content/about.md
+[Debug 01:02:52.620] MdFoldingProvider: provideFoldingRanges - file:///home/near/Documents/Code/zerai.xyz/content/posts/hello-world.md
+[Trace 01:03:00.183] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///home/near/Documents/Code/zerai.xyz/README.md

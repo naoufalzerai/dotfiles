@@ -1,0 +1,19 @@
+{
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"font_size": 12,
+	"color_scheme": "Mariana.sublime-color-scheme",
+	"added_words":
+	[
+		"anim8",
+		"windfield",
+		"gamestate",
+		"hud",
+		"sti",
+		"dt",
+		"statemachine",
+		"lua",
+	],
+}

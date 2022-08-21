@@ -1,0 +1,42 @@
+{
+	"folders":
+	[
+		{
+			"folder_exclude_patterns":
+			[
+				"data"
+			],
+			"path": ".",
+		},
+	],
+	"debugger_tasks": [
+		"examples/cpp/cpp.sublime-project",
+		"examples/go/go.sublime-project",
+		"examples/mock/mock.sublime-project",
+		"examples/php/php.sublime-project",
+		"examples/python/python.sublime-project",
+		"examples/ruby/ruby.sublime-project",
+		"examples/web/web.sublime-project",
+		"examples/elixir/elixir.sublime-project",
+	],
+	"debugger_compounds": [
+		"examples/cpp/cpp.sublime-project",
+		"examples/go/go.sublime-project",
+		"examples/mock/mock.sublime-project",
+		"examples/php/php.sublime-project",
+		"examples/python/python.sublime-project",
+		"examples/ruby/ruby.sublime-project",
+		"examples/web/web.sublime-project",
+		"examples/elixir/elixir.sublime-project",
+	],
+	"debugger_configurations": [
+		"examples/cpp/cpp.sublime-project",
+		"examples/go/go.sublime-project",
+		"examples/mock/mock.sublime-project",
+		"examples/php/php.sublime-project",
+		"examples/python/python.sublime-project",
+		"examples/ruby/ruby.sublime-project",
+		"examples/web/web.sublime-project",
+		"examples/elixir/elixir.sublime-project",
+	],
+}

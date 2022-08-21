@@ -1,0 +1,87 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: regolith-i3xrocks-config
+Source: https://github.com/regolith-linux/i3xrocks
+
+Files: *
+Copyright: 2018-2019 Ken Gilmer <kgilmer@gmail.com>
+License: GPL-3.0+
+
+Files: scripts/battery
+Copyright: Copyright © 2014 Pierre Mavro <deimos@deimos.fr>
+           Copyright © 2014 Vivien Didelot <vivien@didelot.org>
+License: GPL-3.0+
+
+Files: scripts/cpu-usage
+Copyright: Copyright © 2014 Pierre Mavro <deimos@deimos.fr>
+           Copyright © 2014 Vivien Didelot <vivien@didelot.org>
+           Copyright © 2014 Andreas Guldstrand <andreas.guldstrand@gmail.com>
+License: GPL-3.0+
+
+Files: scripts/disk-capacity
+Copyright: Copyright © 2014 Julien Bonjean <julien@bonjean.info>
+           Copyright © 2020 Moritz Heiber <hello@heiber.im>
+License: GPL-3.0+
+
+Files: scripts/memory
+Copyright: Copyright © 2014 Julien Bonjean <julien@bonjean.info>
+License: GPL-3.0+
+
+Files: scripts/focused-window-name
+       scripts/next-workspace
+       scripts/next-workspace-widget
+Copyright: Copyright © 2019 Bence Ferdinandy <bence@ferdinandy.com>
+License: GPL-3.0+
+
+Files: scripts/key-indicator
+Copyright: Copyright 2019 MerlinElMago
+License: GPL-3.0+
+
+Files: scripts/mediaplayer
+Copyright: Copyright © 2014 Tony Crisci <tony@dubstepdish.com>
+License: GPL-3.0+
+
+Files: scripts/openvpn
+Copyright: Copyright © Pierre Mavro/Deimosfr <deimos@deimos.fr>
+License: GPL-3.0+
+
+Files: scripts/temp
+Copyright: Copyright © 2014 Pierre Mavro <deimos@deimos.fr>
+           Copyright © 2014 Vivien Didelot <vivien@didelot.org>
+           Copyright © 2014 Andreas Guldstrand <andreas.guldstrand@gmail.com>
+           Copyright © 2014 Benjamin Chretien <chretien at lirmm dot fr>
+License: GPL-3.0+
+
+Files: scripts/volume
+Copyright: Copyright © 2014 Julien Bonjean <julien@bonjean.info>
+           Copyright © 2014 Alexander Keller <github@nycroth.com>
+License: GPL-3.0+
+
+Files: scripts/wifi
+Copyright: Copyright (C) 2014 Alexander Keller <github@nycroth.com>
+License: GPL-3.0+
+
+Files: scripts/wifi2
+       scripts/battery2
+Copyright: Copyright (C) 2019 leo palmer sunmo <leo.sunmo@gmail.com>
+License: GPL-3.0+
+
+Files: debian/*
+Copyright: 2019 Ken Gilmer <kgilmer@gmail.com>
+License: GPL-3.0+
+
+License: GPL-3.0+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <https://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".

@@ -1,0 +1,4 @@
+baseURL = 'https://zerai.xyz/'
+languageCode = 'en-us'
+title = 'Zerai.xyz'
+theme = 'notepadium'

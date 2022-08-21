@@ -1,0 +1,27 @@
+{
+	"file_regex": "^(?:Error:)?[\t ](...*?):([0-9]*):?([0-9]*)",
+	"selector": "source.lua",
+	"target": "lualove_run",
+	"variant_name": "love",
+
+	"cancel": {"kill": true},
+
+	"variants": [
+		{
+			"name": "LuaJIT Run File",
+			"variant_name": "luajit",
+		},
+		{
+			"name": "Lua Run File",
+			"variant_name": "lua",
+		},
+		{
+			"name": "ldoc: File",
+			"variant_name": "ldoc_file",
+		},
+		{
+			"name": "ldoc: Project",
+			"variant_name": "ldoc_project",
+		}
+	]
+}

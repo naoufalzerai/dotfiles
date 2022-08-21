@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "lua-local",
+        "request": "launch",
+        "name": "Test",
+        "cwd":"${workspaceFolder}",
+        "program": {
+          "lua": "lua5.1",
+          "file": "test.lua"
+        }
+      },
+      {
+        "type": "lua-local",
+        "request": "launch",
+        "name": "Debug",
+        "program": {
+          "command": "love"
+        },
+        "args": [
+          ".",
+          "debug"
+        ],
+      },
+      {
+        "type": "lua-local",
+        "request": "launch",
+        "name": "Release",
+        "program": {
+          "command": "love"
+        },
+        "args": [
+          ".",
+        ],
+      },
+    ]
+  }

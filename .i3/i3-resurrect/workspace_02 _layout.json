@@ -1,0 +1,304 @@
+{
+  "border": "pixel",
+  "current_border_width": -1,
+  "floating": "auto_off",
+  "fullscreen_mode": 1,
+  "geometry": {
+    "x": 0,
+    "y": 0,
+    "width": 0,
+    "height": 0
+  },
+  "layout": "splith",
+  "marks": [],
+  "name": "02: \uf1d3",
+  "orientation": "horizontal",
+  "percent": 1.0,
+  "scratchpad_state": "none",
+  "sticky": false,
+  "type": "workspace",
+  "workspace_layout": "default",
+  "nodes": [
+    {
+      "border": "pixel",
+      "current_border_width": -1,
+      "floating": "auto_off",
+      "fullscreen_mode": 0,
+      "geometry": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "layout": "splitv",
+      "marks": [],
+      "name": null,
+      "orientation": "vertical",
+      "percent": 0.6200000000000001,
+      "scratchpad_state": "none",
+      "sticky": false,
+      "type": "con",
+      "workspace_layout": "default",
+      "nodes": [
+        {
+          "border": "pixel",
+          "current_border_width": -1,
+          "floating": "auto_off",
+          "fullscreen_mode": 0,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "layout": "tabbed",
+          "marks": [],
+          "name": null,
+          "orientation": "horizontal",
+          "percent": 0.8600000000000001,
+          "scratchpad_state": "none",
+          "sticky": false,
+          "type": "con",
+          "workspace_layout": "default",
+          "nodes": [
+            {
+              "border": "none",
+              "current_border_width": 2,
+              "floating": "auto_off",
+              "fullscreen_mode": 0,
+              "geometry": {
+                "x": 10,
+                "y": 57,
+                "width": 1171,
+                "height": 868
+              },
+              "layout": "splith",
+              "marks": [],
+              "name": "~/Documents/Code/zerai.xyz/config.toml (zerai.xyz) - Sublime Text (UNREGISTERED)",
+              "orientation": "none",
+              "percent": 0.3333333333333333,
+              "scratchpad_state": "none",
+              "sticky": false,
+              "type": "con",
+              "workspace_layout": "default",
+              "swallows": [
+                {
+                  "class": "^Sublime_text$",
+                  "instance": "^sublime_text$"
+                }
+              ]
+            },
+            {
+              "border": "none",
+              "current_border_width": 2,
+              "floating": "auto_off",
+              "fullscreen_mode": 0,
+              "geometry": {
+                "x": 0,
+                "y": 0,
+                "width": 1171,
+                "height": 822
+              },
+              "layout": "splith",
+              "marks": [],
+              "name": "notepadium",
+              "orientation": "none",
+              "percent": 0.3333333333333333,
+              "scratchpad_state": "none",
+              "sticky": false,
+              "type": "con",
+              "workspace_layout": "default",
+              "swallows": [
+                {
+                  "class": "^Org\\.gnome\\.Nautilus$",
+                  "instance": "^org\\.gnome\\.Nautilus$"
+                }
+              ]
+            },
+            {
+              "border": "none",
+              "current_border_width": 2,
+              "floating": "auto_off",
+              "fullscreen_mode": 0,
+              "geometry": {
+                "x": 10,
+                "y": 57,
+                "width": 1171,
+                "height": 868
+              },
+              "layout": "splith",
+              "marks": [],
+              "name": "~/Documents/Code/zerai.xyz - Sublime Merge (UNREGISTERED)",
+              "orientation": "none",
+              "percent": 0.3333333333333333,
+              "scratchpad_state": "none",
+              "sticky": false,
+              "type": "con",
+              "workspace_layout": "default",
+              "swallows": [
+                {
+                  "class": "^Sublime_merge$",
+                  "instance": "^sublime_merge$"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "border": "pixel",
+          "current_border_width": -1,
+          "floating": "auto_off",
+          "fullscreen_mode": 0,
+          "geometry": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "layout": "tabbed",
+          "marks": [],
+          "name": null,
+          "orientation": "horizontal",
+          "percent": 0.13999999999999999,
+          "scratchpad_state": "none",
+          "sticky": false,
+          "type": "con",
+          "workspace_layout": "default",
+          "nodes": [
+            {
+              "border": "pixel",
+              "current_border_width": 2,
+              "floating": "auto_off",
+              "fullscreen_mode": 0,
+              "geometry": {
+                "x": 0,
+                "y": 0,
+                "width": 802,
+                "height": 458
+              },
+              "layout": "splith",
+              "marks": [],
+              "name": "near@near-desk: ~/Documents/Code/go/sablia/web",
+              "orientation": "none",
+              "percent": 0.5,
+              "scratchpad_state": "none",
+              "sticky": false,
+              "type": "con",
+              "workspace_layout": "default",
+              "swallows": [
+                {
+                  "class": "^Gnome\\-terminal$",
+                  "instance": "^gnome\\-terminal\\-server$"
+                }
+              ]
+            },
+            {
+              "border": "pixel",
+              "current_border_width": 2,
+              "floating": "user_off",
+              "fullscreen_mode": 0,
+              "geometry": {
+                "x": 0,
+                "y": 0,
+                "width": 802,
+                "height": 458
+              },
+              "layout": "splith",
+              "marks": [],
+              "name": "near@near-desk: ~/Documents/Code/zerai.xyz",
+              "orientation": "none",
+              "percent": 0.5,
+              "scratchpad_state": "none",
+              "sticky": false,
+              "type": "con",
+              "workspace_layout": "default",
+              "swallows": [
+                {
+                  "class": "^Gnome\\-terminal$",
+                  "instance": "^gnome\\-terminal\\-server$"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "border": "pixel",
+      "current_border_width": -1,
+      "floating": "auto_off",
+      "fullscreen_mode": 0,
+      "geometry": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "layout": "tabbed",
+      "marks": [],
+      "name": null,
+      "orientation": "horizontal",
+      "percent": 0.38,
+      "scratchpad_state": "none",
+      "sticky": false,
+      "type": "con",
+      "workspace_layout": "default",
+      "nodes": [
+        {
+          "border": "pixel",
+          "current_border_width": 2,
+          "floating": "auto_off",
+          "fullscreen_mode": 0,
+          "geometry": {
+            "x": 1313,
+            "y": 37,
+            "width": 595,
+            "height": 888
+          },
+          "layout": "splith",
+          "marks": [],
+          "name": "Naoufal Zerai\u00a0\u2013\u00a0100% JavaScript-free - Google Chrome",
+          "orientation": "none",
+          "percent": 0.5,
+          "scratchpad_state": "none",
+          "sticky": false,
+          "type": "con",
+          "workspace_layout": "default",
+          "swallows": [
+            {
+              "class": "^Google\\-chrome$",
+              "instance": "^google\\-chrome$"
+            }
+          ]
+        },
+        {
+          "border": "pixel",
+          "current_border_width": 2,
+          "floating": "auto_off",
+          "fullscreen_mode": 0,
+          "geometry": {
+            "x": 1311,
+            "y": 35,
+            "width": 595,
+            "height": 1031
+          },
+          "layout": "splith",
+          "marks": [],
+          "name": "default.ctx - /media/near/Linoux/notes - CherryTree 0.99.48",
+          "orientation": "none",
+          "percent": 0.5,
+          "scratchpad_state": "none",
+          "sticky": false,
+          "type": "con",
+          "workspace_layout": "default",
+          "swallows": [
+            {
+              "class": "^Cherrytree$",
+              "instance": "^cherrytree$"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

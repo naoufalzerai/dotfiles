@@ -1,0 +1,41 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "lua-local",
+        "request": "launch",
+        "name": "Debug",
+        "cwd":"${project_path}",
+        "program": {
+          "lua": "lua5.1",
+          "file": "test.lua"
+        },
+        "env": {
+                   "LUA_PATH": "./?.lua;/home/near/.config/sublime-text/Packages/Debugger/data/adapters/lua-local/extension/debugger"
+               },
+      },
+      {
+        "type": "lua-local",
+        "request": "launch",
+        "name": "Debug",
+        "program": {
+          "command": "love"
+        },
+        "args": [
+          ".",
+          "debug"
+        ],
+      },
+      {
+        "type": "lua-local",
+        "request": "launch",
+        "name": "Release",
+        "program": {
+          "command": "love"
+        },
+        "args": [
+          ".",
+        ],
+      },
+    ]
+  }

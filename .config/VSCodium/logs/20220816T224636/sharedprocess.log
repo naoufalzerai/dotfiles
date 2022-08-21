@@ -1,0 +1,21 @@
+[2022-08-16 22:46:38.061] [sharedprocess] [info] Starting worker process with pid 569264 (type: fileWatcher, window: 1).
+[2022-08-16 23:06:56.203] [sharedprocess] [info] Getting Manifest... bierner.emojisense
+[2022-08-16 23:06:56.390] [sharedprocess] [info] Installing extension: bierner.emojisense
+[2022-08-16 23:06:56.968] [sharedprocess] [info] Downloaded extension: bierner.emojisense /home/near/.config/VSCodium/CachedExtensionVSIXs/bierner.emojisense-0.9.1
+[2022-08-16 23:06:56.986] [sharedprocess] [info] Extracted extension to /home/near/.vscode-oss/extensions/.d6bc66a1-9054-4c9e-a61b-ee837ce582e4: bierner.emojisense
+[2022-08-16 23:06:56.988] [sharedprocess] [info] Renamed to /home/near/.vscode-oss/extensions/bierner.emojisense-0.9.1
+[2022-08-16 23:06:56.989] [sharedprocess] [info] Extracting completed. bierner.emojisense
+[2022-08-16 23:06:56.990] [sharedprocess] [info] Extension installed successfully: bierner.emojisense
+[2022-08-16 23:19:50.317] [sharedprocess] [info] Getting Manifest... budparr.language-hugo-vscode
+[2022-08-16 23:19:50.502] [sharedprocess] [info] Installing extension: budparr.language-hugo-vscode
+[2022-08-16 23:19:50.968] [sharedprocess] [info] Downloaded extension: budparr.language-hugo-vscode /home/near/.config/VSCodium/CachedExtensionVSIXs/budparr.language-hugo-vscode-1.2.0
+[2022-08-16 23:19:50.975] [sharedprocess] [info] Extracted extension to /home/near/.vscode-oss/extensions/.9bbcac2b-d21c-4bff-8457-47e20fd32f28: budparr.language-hugo-vscode
+[2022-08-16 23:19:50.977] [sharedprocess] [info] Renamed to /home/near/.vscode-oss/extensions/budparr.language-hugo-vscode-1.2.0
+[2022-08-16 23:19:50.977] [sharedprocess] [info] Extracting completed. budparr.language-hugo-vscode
+[2022-08-16 23:19:50.978] [sharedprocess] [info] Extension installed successfully: budparr.language-hugo-vscode
+[2022-08-17 09:30:56.065] [sharedprocess] [warning] No ptyHost heartbeat after 6 seconds
+[2022-08-17 16:52:28.595] [sharedprocess] [info] Starting worker process with pid 1121459 (type: fileWatcher, window: 3).
+[2022-08-17 16:52:30.373] [sharedprocess] [info] Worker process with pid 569264 terminated normally (type: fileWatcher, window: 1).
+[2022-08-17 16:52:31.911] [sharedprocess] [info] Worker process with pid 1121459 terminated normally (type: fileWatcher, window: 3).
+[2022-08-17 16:52:32.598] [sharedprocess] [info] Starting worker process with pid 1121719 (type: fileWatcher, window: 3).
+[2022-08-17 21:12:42.689] [sharedprocess] [info] Starting worker process with pid 1398031 (type: fileWatcher, window: 4).

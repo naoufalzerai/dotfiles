@@ -1,0 +1,8 @@
+[2022-08-18 14:48:06.405] [main] [info] update#setState idle
+[2022-08-18 14:48:07.376] [main] [info] Starting extension host with pid 641455 (fork() took 6 ms).
+[2022-08-18 14:48:36.407] [main] [info] update#setState checking for updates
+[2022-08-18 14:48:36.487] [main] [info] update#setState available for download
+[2022-08-18 16:03:23.607] [main] [info] Starting extension host with pid 819775 (fork() took 10 ms).
+[2022-08-18 16:07:39.594] [main] [info] Extension host with pid 819775 exited with code: 0, signal: null.
+[2022-08-18 22:46:37.569] [main] [info] Waiting for extension host with pid 641455 to exit.
+[2022-08-18 22:46:37.571] [main] [info] Extension host with pid 641455 exited with code: 0, signal: null.

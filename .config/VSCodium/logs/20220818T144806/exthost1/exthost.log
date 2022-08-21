@@ -1,0 +1,59 @@
+[2022-08-18 14:48:07.832] [exthost] [info] Extension host with pid 641455 started
+[2022-08-18 14:48:07.832] [exthost] [info] Skipping acquiring lock for /home/near/.config/VSCodium/User/workspaceStorage/e58519af411028565401dfb6037c7e8b.
+[2022-08-18 14:48:07.900] [exthost] [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+[2022-08-18 14:48:07.911] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-08-18 14:48:07.912] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+[2022-08-18 14:48:07.913] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-08-18 14:48:07.914] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.sublime-keybindings, startup: true, activationEvent: '*'
+[2022-08-18 14:48:07.928] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-08-18 14:48:07.943] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-08-18 14:48:07.966] [exthost] [info] Eager extensions activated
+[2022-08-18 14:48:07.987] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-08-18 14:48:07.992] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-08-18 14:48:07.994] [exthost] [info] ExtensionService#_doActivateExtension bierner.emojisense, startup: false, activationEvent: 'onStartupFinished'
+[2022-08-18 14:48:08.000] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+[2022-08-18 14:48:42.019] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+[2022-08-18 14:48:42.022] [exthost] [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+[2022-08-18 14:48:42.261] [exthost] [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+[2022-08-18 14:58:08.555] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 14:58:15.847] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 14:59:07.244] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 14:59:27.494] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:01:43.368] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:01:44.399] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:03:37.388] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:04:43.904] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:04:44.939] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:05:01.530] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:05:18.646] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:07:44.415] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:07:45.448] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:07:52.555] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:07:57.586] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:08:02.927] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:08:07.952] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:08:41.194] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:10:22.998] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:10:30.197] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:10:44.915] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:11:25.150] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:12:37.027] [exthost] [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+[2022-08-18 15:13:16.082] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:13:22.102] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:13:30.980] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:13:55.317] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:16:14.480] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:16:24.825] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:16:44.090] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:16:49.118] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:16:55.818] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:16:56.843] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:17:07.220] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:17:12.245] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:17:31.246] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:17:36.268] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:19:56.368] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:19:57.399] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 15:20:15.863] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 287
+[2022-08-18 22:46:37.548] [exthost] [info] Extension host terminating: received terminate message from renderer
+[2022-08-18 22:46:37.562] [exthost] [info] Extension host with pid 641455 exiting with code 0

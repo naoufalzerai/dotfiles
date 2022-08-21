@@ -1,0 +1,12 @@
+[2022-08-18 10:22:09.277] [sharedprocess] [info] Starting worker process with pid 4222 (type: fileWatcher, window: 1).
+[2022-08-18 10:22:09.305] [sharedprocess] [info] Starting worker process with pid 4223 (type: fileWatcher, window: 2).
+[2022-08-18 10:22:11.020] [sharedprocess] [info] Getting Manifest... ms-python.python
+[2022-08-18 10:22:11.024] [sharedprocess] [info] Getting Manifest... ms-python.python
+[2022-08-18 10:22:11.789] [sharedprocess] [info] Installing extension: ms-python.python
+[2022-08-18 10:22:11.799] [sharedprocess] [info] Extensions is already requested to install ms-python.python
+[2022-08-18 10:22:15.940] [sharedprocess] [info] Downloaded extension: ms-python.python /home/near/.config/VSCodium/CachedExtensionVSIXs/ms-python.python-2022.12.1
+[2022-08-18 10:22:16.850] [sharedprocess] [info] Extracted extension to /home/near/.vscode-oss/extensions/.aea759f0-66e2-442e-b063-541ddf91d8be: ms-python.python
+[2022-08-18 10:22:16.855] [sharedprocess] [info] Renamed to /home/near/.vscode-oss/extensions/ms-python.python-2022.12.1
+[2022-08-18 10:22:16.857] [sharedprocess] [info] Extracting completed. ms-python.python
+[2022-08-18 10:22:16.861] [sharedprocess] [info] Extension installed successfully: ms-python.python
+[2022-08-18 11:28:24.087] [sharedprocess] [info] Worker process with pid 4223 terminated normally (type: fileWatcher, window: 2).

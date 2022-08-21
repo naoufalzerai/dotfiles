@@ -1,0 +1,10 @@
+[
+    {
+        "button": "button4", "count": 1, "modifiers": ["ctrl"],
+        "press_command": "jump_back"
+    },
+    {
+        "button": "button5", "count": 1, "modifiers": ["ctrl"],
+        "press_command": "jump_forward"
+    }
+]
